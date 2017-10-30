@@ -1,0 +1,30 @@
+include ../mixin/mixins
+section#portfolio
+    .container
+        .row
+            .col-md-12.col-sm-12
+                .section-title
+                    strong 04
+                    h1.heading.bold OUR PORTFOLIO
+                    hr
+                .iso-section
+                    ul.filter-wrapper.clearfix
+                        li: a(href="#" data-filter="*").selected.opc-main-bg All
+                        li: a(href="#" data-filter=".html").opc-main-bg HTML
+                        li: a(href="#" data-filter=".photoshop").opc-main-bg PHOTOSHOP
+                        li: a(href="#" data-filter=".wordpress").opc-main-bg WORDPRESS
+                        li: a(href="#" data-filter=".mobile").opc-main-bg MOBILE
+                    .iso-box-section.wow.fadeIn(data-wow-delay="0.9s")
+                        .iso-box-wrapper.col4-iso-box
+                            .iso-box.html.wordpress.mobile.col-lg-4.col-md-4.col-sm-6
+                                +mix04("images/portfolio-img1.jpg")
+                            .iso-box.wordpress.col-lg-4.col-md-4.col-sm-6
+                                +mix04("images/portfolio-img2.jpg")
+                            .iso-box.html.mobile.col-lg-4.col-md-4.col-sm-6
+                                +mix04("images/portfolio-img3.jpg")
+                            .iso-box.wordpress.col-lg-4.col-md-4.col-sm-6
+                                +mix04("images/portfolio-img4.jpg")
+                            .iso-box.html.photoshop.col-lg-4.col-md-4.col-sm-6
+                                +mix04("images/portfolio-img5.jpg")
+                            .iso-box.photoshop.col-lg-4.col-md-4.col-sm-6
+                                +mix04("images/portfolio-img6.jpg")

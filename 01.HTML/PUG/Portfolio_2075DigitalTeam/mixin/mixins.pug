@@ -1,0 +1,25 @@
+mixin mix01(_delay, _h3)
+    .col-lg-4.col-md-4.col-sm-4.wow.fadeInUp(data-wow-delay=_delay)
+        i&attributes(attributes)
+        h3=_h3
+        hr
+        if block
+            block
+mixin mix02(_delay, _img, _h4, _h3)
+    .col-md-3.col-sm-6.wow.fadeIn(data-wow-delay=_delay)
+        .team-wrapper
+            img.img-responsive(src=_img alt="team img")
+            .team-des
+                h4=_h4
+                h3=_h3
+                hr
+                ul.social-icon
+                    li: a(href="#" data-wow-delay="0.3s").fa.fa-facebook.wow.fadeIn
+                    li: a(href="#" data-wow-delay="0.6s").fa.fa-twitter.wow.fadeIn
+                    li: a(href="#" data-wow-delay="0.9s").fa.fa-dribbble.wow.fadeIn
+mixin mix03(_value)
+    - var href = "#"+_value;
+    li.active: a(href=href aria-controls=_value role="tab" data-toggle="tab")= _value
+mixin mix04(_img)
+    a(href=_img data-lightbox-gallery="portfolio-gallery")
+        img(src=_img alt="portfolio img")
