@@ -18,6 +18,6 @@ section.navbar.navbar-fixed-top.custom-navbar(role="navigation")
                     '#pricing': 'PRICING',
                     '#contact': 'CONTACT'
                     }
-                each value, index in navList
+                each value, key in navList
                     li
-                        a.smoothScroll(href=index)= value
+                        a.smoothScroll(href=key)= value

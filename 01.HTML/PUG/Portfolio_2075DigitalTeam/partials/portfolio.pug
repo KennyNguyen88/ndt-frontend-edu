@@ -9,11 +9,11 @@ section#portfolio
                     hr
                 .iso-section
                     ul.filter-wrapper.clearfix
-                        li: a(href="#" data-filter="*").selected.opc-main-bg All
-                        li: a(href="#" data-filter=".html").opc-main-bg HTML
-                        li: a(href="#" data-filter=".photoshop").opc-main-bg PHOTOSHOP
-                        li: a(href="#" data-filter=".wordpress").opc-main-bg WORDPRESS
-                        li: a(href="#" data-filter=".mobile").opc-main-bg MOBILE
+                        +mix05("#","*","All",true)
+                        +mix05("#",".html","HTML",false)
+                        +mix05("#",".photoshop","PHOTOSHOP",false)
+                        +mix05("#",".wordpress","WORDPRESS",false)
+                        +mix05("#",".mobile","MOBILE",false)
                     .iso-box-section.wow.fadeIn(data-wow-delay="0.9s")
                         .iso-box-wrapper.col4-iso-box
                             .iso-box.html.wordpress.mobile.col-lg-4.col-md-4.col-sm-6

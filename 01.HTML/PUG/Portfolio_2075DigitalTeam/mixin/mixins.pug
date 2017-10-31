@@ -18,8 +18,13 @@ mixin mix02(_delay, _img, _h4, _h3)
                     li: a(href="#" data-wow-delay="0.6s").fa.fa-twitter.wow.fadeIn
                     li: a(href="#" data-wow-delay="0.9s").fa.fa-dribbble.wow.fadeIn
 mixin mix03(_value)
-    - var href = "#"+_value;
-    li.active: a(href=href aria-controls=_value role="tab" data-toggle="tab")= _value
+    - var _href = "#"+_value;
+        li&attributes(attributes): a(href=_href aria-controls=_value role="tab" data-toggle="tab")= _value
 mixin mix04(_img)
     a(href=_img data-lightbox-gallery="portfolio-gallery")
         img(src=_img alt="portfolio img")
+mixin mix05(_href, _df, _con, _selected)
+    if _selected
+        li: a(href=_href data-filter=_df).selected.opc-main-bg=_con
+    else
+        li: a(href=_href data-filter=_df).opc-main-bg=_con
