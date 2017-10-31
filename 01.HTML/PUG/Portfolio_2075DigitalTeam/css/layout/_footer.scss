@@ -1,0 +1,40 @@
+footer {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  p{
+    padding-top: 20px;
+  }
+}
+.social-icon {
+  padding: 0;
+  margin: 0;
+  li{
+    list-style: none;
+    display: inline-block;
+    padding: 6px;
+    a{
+      box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.09);
+      color: $footer-icon-color;
+      font-size: 20px;
+      width: 56px;
+      height: 56px;
+      line-height: 60px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.4s ease-in-out;
+      &:hover{
+        color: $footer-icon-hover-color;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  @-moz-document url-prefix() {
+    #portfolio .col-lg-4,
+    #portfolio .col-md-4 {
+      width: 33.333%;
+    }
+  }
+}

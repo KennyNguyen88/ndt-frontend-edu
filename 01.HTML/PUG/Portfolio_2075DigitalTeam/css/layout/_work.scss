@@ -1,0 +1,14 @@
+#work{
+  @extend %section-padding;
+  text-align: center;
+  .col-md-4{
+    padding: 28px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    &:hover{
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.20);
+    }
+  }
+
+}
