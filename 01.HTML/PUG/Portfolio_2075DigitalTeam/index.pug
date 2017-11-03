@@ -1,13 +1,13 @@
-extends template
+extends pug/template
 block append styles
-    link(rel="stylesheet" href="css/style.css")
+    link(rel="stylesheet" href="css/scss/style.css")
 block content
-    include partials/home
-    include partials/work
-    include partials/about
-    include partials/team
-    include partials/portfolio
-    include partials/price
-    include partials/contact
+    include pug/components/home
+    include pug/components/work
+    include pug/components/about
+    include pug/components/team
+    include pug/components/portfolio
+    include pug/components/price
+    include pug/components/contact
 block append scripts
     script(src="js/custom.js")

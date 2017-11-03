@@ -1,8 +1,10 @@
 body {
   background: $body-background;
   position: relative;
-}
 
+  font-family: $font-stack-primary;
+  font-weight: 400;
+}
 html, body {
   width: 100%;
   overflow-x: hidden;
@@ -16,11 +18,12 @@ hr {
   width: 180px;
   border-color: #CCC;
 }
-
-.subheading{
-  padding-bottom: 60px;
+h1, h2, h3, h4 {
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-.section-title {
-  padding-bottom: 32px;
+p {
+  line-height: 28px;
+  font-size: 15px;
 }

@@ -1,5 +1,8 @@
 #team{
   @extend %section-padding;
+  .social-icon {
+    @extend .social-icon;
+  }
   text-align: center;
   .col.md-3{
     padding-top: 20px;
@@ -44,15 +47,9 @@
   img{
     margin: 0 auto;
   }
-  .social-icon{
-    li{
-      a{
-        color: $team-icon-color;
-        &:hover{
-          color: $team-icon-hover-color;
-        }
-      }
-    }
-
+  h3{
+    color: #00c6d7;
+    font-size: 14px;
+    font-weight: bold;
   }
 }

@@ -42,4 +42,25 @@
       background-color: $pricing-button-background-style3;
     }
   }
+  h2{
+    font-size: 52px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  .plan{
+    span{
+      font-size: 16px;
+    }
+    .plan_title{
+      font-weight: 300;
+      letter-spacing: 2px;
+      padding: 30px;
+    }
+    ul{
+      li{
+        font-weight: 500;
+      }
+    }
+  }
 }
