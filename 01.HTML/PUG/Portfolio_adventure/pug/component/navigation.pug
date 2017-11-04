@@ -1,0 +1,21 @@
+section.navbar.navbar-fixed-top.custom-navbar(role="navigation")
+    .container
+        .navbar-header
+            button.navbar-collapse(data-toggle="collapse" data-target=".navbar-collapse")
+                span.icon.icon-bar
+                span.icon.icon-bar
+                span.icon.icon-bar
+            a.smoothScroll.navbar-brand(href="#home") ADVENTURE
+        .collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+                -
+                    var navigationList = {
+                    "#work" : "WORK",
+                    "#about" : "ABOUT",
+                    "#team" : "TEAM",
+                    "#portfolio" : "GALLERY",
+                    "#plan" : "PLANS",
+                    "#contact" : "CONTACT"
+                    }
+                each value,key in navigationList
+                    li: a.smoothScroll(href=key)= value

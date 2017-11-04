@@ -1,0 +1,30 @@
+section#about.parallax-section
+    -
+        var factList = {
+            "32": "TOURS",
+            "16": "AWARDS",
+            "128": "TRIPS",
+            "24": "PLANS"
+        }
+    .container
+        .row
+            //Section title
+            .col-md-offset-2.col-md-8.col-sm-offset-2.col-sm-8
+                .section-title
+                    h5.wow.bounceIn ACTIVE PEOPLE
+                    h1.heading.color-white WHO WE ARE
+                    hr
+                    p.color-white Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt.
+            .col-md-6.col-sm-12
+                h3.color-white OUT STORY
+                h2 ADVENTURE STUDIO
+                p.color-white Adventure is free Bootstrap theme by #[a(rel="nofollow" href="http://www.tooplate.com/" target="_parent") tooplate]. Download, edit, and use this layout for your website. Feel free to modify or remove anything to meet your desire. Excepteu sunt in culpa qui officia deserunt mollit.
+                p.color-white Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt mollit anim id.
+            .col-md-6.col-sm-12
+                h2.mobile-top WHY CHOOSE US
+                include accordion
+            each value, key in factList
+                .col-md-3.col-sm-3.col-xs-6
+                    .about-fact.border-right
+                        span= key
+                        h4= value

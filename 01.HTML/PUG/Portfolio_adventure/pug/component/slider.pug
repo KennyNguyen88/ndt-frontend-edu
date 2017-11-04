@@ -1,0 +1,63 @@
+.site-slider
+    -
+        var pathimage = "images/";
+        var slides = [
+            {
+                "imgsrc": pathimage+"slide1.jpg",
+                "imgalt": "slider image 1",
+                "thumbsrc" : pathimage+"thumb1.jpg",
+                "thumbalt" : "thumbnail 1",
+                "h2": "Plan your trip",
+                "p":"Fusce elementum nisi et magna tristique, ut facilisis magna dapibus"
+            },
+            {
+                "imgsrc": pathimage+"slide2.jpg",
+                "imgalt": "slider image 2",
+                "thumbsrc" : pathimage+"thumb2.jpg",
+                "thumbalt" : "thumbnail 2",
+                "h2": "Bootstrap Theme",
+                "p":"Fusce elementum nisi et magna tristique, ut facilisis magna dapibus"
+            },
+            {
+                "imgsrc": pathimage+"slide3.jpg",
+                "imgalt": "slider image 3",
+                "thumbsrc" : pathimage+"thumb3.jpg",
+                "thumbalt" : "thumbnail 3",
+                "h2": "Mobile Ready",
+                "p":"Fusce elementum nisi et magna tristique, ut facilisis magna dapibus"
+            },
+            {
+                "imgsrc": pathimage+"slide4.jpg",
+                "imgalt": "slider image 4",
+                "thumbsrc" : pathimage+"thumb4.jpg",
+                "thumbalt" : "thumbnail 4",
+                "h2": "Responsive Design",
+                "p":"Fusce elementum nisi et magna tristique, ut facilisis magna dapibus"
+            },
+            {
+                "imgsrc": pathimage+"slide5.jpg",
+                "imgalt": "slider image 5",
+                "thumbsrc" : pathimage+"thumb5.jpg",
+                "thumbalt" : "thumbnail 5",
+                "h2": "Get it FREE!",
+                "p":"Fusce elementum nisi et magna tristique, ut facilisis magna dapibus"
+            }
+        ]
+    ul.bxslider
+        each value in slides
+            li
+                img(src=value["imgsrc"] alt=value["imgalt"])
+                .container
+                    .row
+                        .col-md-12
+                            .slider-caption
+                                h2=value["h2"]
+                                p.color-white=value["p"]
+    .bx-thumbnail-wrapper
+        .container
+            .row
+                .col-md-12
+                    #bx-pager
+                        each val in slides
+                            a(data-slide-index=index href="#")
+                                img(src=val["thumbsrc"] alt=val["thumbalt"])

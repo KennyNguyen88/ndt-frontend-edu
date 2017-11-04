@@ -1,0 +1,41 @@
+-
+    var planList = [
+        {
+            "plan-title" : "Villager",
+            "plan-price" : "$500",
+            "plan-list" : ['4 days 3 nights','Explore Forest','Visit Waterfalls','Group of 10 people'],
+        },
+        {
+            "plan-title" : "Tourer",
+            "plan-price" : "$800",
+            "plan-list" : ['8 days 7 nights','Explore Mountains','Touring Villages','Group of 15 people']
+        },
+        {
+            "plan-title" : "Explorer",
+            "plan-price" : "$1,400",
+            "plan-list" : ['12 days 11 nights','Multiple Cities','Unique Experiences','Group of 20 people']
+        }
+    ]
+
+section#plan.parallax-section
+    .container
+        .row
+            //Section title
+            .col-md-offset-2.col-md-8.col-sm-offset-2.col-sm-8.wow.fadeInUp
+                .section-title
+                    h5.wow.bounceIn UNIQUE ADVENTURES
+                    h1.heading.color-white TRIP PLANS
+                    hr
+                    p.color-white Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt.
+
+            each value,index in planList
+                .col-md-4.col-sm-6.wow.fadeIn(data-wow-delay=(index*0.3)+"s")
+                    .plan
+                        h2.plan_title=value["plan-title"]
+                        .plan-price
+                            h1.plan-price-title #{value["plan-price"]} / #[small trip]
+                        ul.plan-list
+                            each subval in value["plan-list"]
+                                li=subval
+                        .plan-button
+                            button.btn.btn-default CHOOSE PLAN

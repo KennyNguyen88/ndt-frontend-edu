@@ -1,0 +1,32 @@
+-
+    var accordlist = [
+    {
+        "head" : "Very Fast Response",
+        "body" : "Phasellus odio lacus, posuere vel sodales a, facilisis vitae ligula. Pellentesque leo ligula, lobortis ut sapien blandit, convallis pulvinar nisi. Proin tempor congue nibh. Nam non maximus metus, nec tincidunt nulla.",
+        "active" : true
+        },
+        {
+        "head" : "High Quality Team",
+        "body" : "Phasellus odio lacus, posuere vel sodales a, facilisis vitae ligula. Pellentesque leo ligula, lobortis ut sapien blandit, convallis pulvinar nisi. Proin tempor congue nibh. Nam non maximus metus, nec tincidunt nulla.",
+        "active" : false
+        },
+        {
+        "head" : "Special Awards",
+        "body" : "Phasellus odio lacus, posuere vel sodales a, facilisis vitae ligula. Pellentesque leo ligula, lobortis ut sapien blandit, convallis pulvinar nisi. Proin tempor congue nibh. Nam non maximus metus, nec tincidunt nulla.",
+        "active" : false
+        }
+    ]
+.panel-group#accordion(role="tablist" aria-multiselectable="true")
+    each value, index in accordlist
+        .panel.panel-default
+            div.panel-heading(id=("heading"+index),role="tab")
+                h4.panel-title
+                    a(role="button" data-toggle="collapse" data-parent="#accordion" href=("#collapse" + index) aria-expanded="true" aria-controls=("#collapse" + index))=value["head"]
+            if value["active"]
+                div.panel-collapse.collapse.in(id=("collapse" + index) role="tabpanel" aria-labelledby=("heading"+index))
+                    .panel-body
+                        p=value["body"]
+            else
+                div.panel-collapse.collapse(id=("collapse" + index) role="tabpanel" aria-labelledby=("heading"+index))
+                    .panel-body
+                        p=value["body"]

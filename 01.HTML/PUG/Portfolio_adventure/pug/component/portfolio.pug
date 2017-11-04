@@ -1,0 +1,37 @@
+-
+    var pathImg = "images/";
+    var portList = {
+        "Mobile App": "portfolio-img1.jpg",
+        "Trip Planning": "portfolio-img2.jpg",
+        "Scheduling": "portfolio-img3.jpg",
+        "Arranging": "portfolio-img4.jpg",
+        "Organizing": "portfolio-img5.jpg",
+        "Grouping": "portfolio-img6.jpg"
+    }
+section#portfolio.parallax-section
+    .container
+        .row
+            //Section title
+            .col-md-offset-2.col-md-8.col-sm-offset-2.col-sm-8
+                .section-title
+                    h5.wow.bounceIn WE ARE DELIGENT
+                    h1.heading SHOWCASE
+                    hr
+                    p Pellentesque mollis purus ipsum. Fusce tristique ante et est placerat dignissim. Curabitur tincidunt risus non dui vulputate tincidunt.
+
+            each value,key in portList
+                .col-md-4.col-sm-6
+                    .grid
+                        figure.effect-zoe
+                            img(src=(pathImg+value) alt="portfolio img")
+                            figcaption
+                                h2=key
+                                p.icon-links
+                                    a(href=(pathImg+value) data-lightbox-gallery="portfolio-gallery")
+                                        span.icon.icon-attachment
+            //Portfolio bottom section
+            .col-md-offset-2.col-md-8.col-sm-12
+                .portfolio-bottom
+                    h2 INTERESTED?
+                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Lorem ipsum dolor sit 	amet.
+                    a.smoothScroll.btn.btn-default(href="#plan") LET'S GO!
