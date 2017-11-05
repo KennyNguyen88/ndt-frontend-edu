@@ -1,0 +1,74 @@
+-
+    var mainNavList = [
+        {
+            "link" : "index-2.html",
+            "img" : "images/home.png",
+            "content" : "Home",
+            "child" : []
+        },
+        {
+            "link" : "all-product.html",
+            "img" : "",
+            "content" : "Products",
+            "child" : []
+        },
+        {
+            "link" : "product.html",
+            "img" : "",
+            "content" : "Product Details",
+            "child" : []
+            },
+        {
+            "link" : "blog.html",
+            "img" : "",
+            "content" : "Blog",
+            "child" : []
+            },
+        {
+            "link" : "blog-single.html",
+            "img" : "",
+            "content" : "Blog Post",
+            "child" : []
+        },
+        {
+            "link" : "#",
+            "img" : "",
+            "content" : "Fullwidth",
+            "child" : []
+        },
+        {
+            "link" : "contact.html",
+            "img" : "",
+            "content" : "Contact",
+            "child" : []
+        },
+        {
+            "link" : "#",
+            "img" : "",
+            "content" : "Sample Menu",
+            "child" : [
+                {
+                    "link":"#",
+                    "content":"Sub Menu 1"
+                },
+                {
+                    "link":"#",
+                    "content":"Sub Menu 2"
+                }
+            ]
+        }
+    ]
+
+.navigation-wrapper
+    ul#navigation.clearfix
+        each val in mainNavList
+            li
+                a(href=val["link"])
+                    if(val["img"] != "")
+                        img(src=val["img"])
+                    | #{val["content"]}
+                if (val["child"].length > 0)
+                    ul
+                        each sval in val["child"]
+                            li
+                                a(href=sval["link"])=sval["content"]

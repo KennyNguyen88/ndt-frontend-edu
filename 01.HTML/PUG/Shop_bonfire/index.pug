@@ -1,0 +1,57 @@
+extends pug/template
+include pug/utility/mixins
+append styles
+    link(rel="stylesheet" type="text/css" media="all" href="css/style.css")
+append content
+    include pug/component/slider
+    -
+        var imgPathProduct = "images/products/";
+        var featuredList = [
+        {
+        "img" : imgPathProduct+"product-6.jpg",
+        "product-name" : "Lorem ipsum",
+        "product-price" : 118
+        },
+        {
+        "img" : imgPathProduct+"product-2.jpg",
+        "product-name" : "Lorem ipsum",
+        "product-price" : 90
+        },
+        {
+        "img" : imgPathProduct+"product-3.jpg",
+        "product-name" : "Lorem ipsum",
+        "product-price" : 120
+        },
+        {
+        "img" : imgPathProduct+"product-7.jpg",
+        "product-name" : "Lorem ipsum",
+        "product-price" : 70
+        }
+        ]
+        var latestList = [
+        {
+        "img" : imgPathProduct+"product-5.jpg",
+        "product-name" : "Lorem ipsum",
+        "product-price" : 70
+        },
+        {
+        "img" : imgPathProduct+"product-1.jpg",
+        "product-name" : "Lorem ipsum",
+        "product-price" : 90
+        },
+        {
+        "img" : imgPathProduct+"product-4.jpg",
+        "product-name" : "Lorem ipsum",
+        "product-price" : 120
+        },
+        {
+        "img" : imgPathProduct+"product-8.jpg",
+        "product-name" : "Lorem ipsum",
+        "product-price" : 70
+        }
+        ]
+    +mixProductList("FEATURED",featuredList)
+    +mixProductList("LATEST",latestList)
+    +mixPagination(7,3)
+append scripts
+    script(type="text/javascript" src="js/script.js")

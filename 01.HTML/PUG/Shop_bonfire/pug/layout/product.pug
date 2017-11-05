@@ -1,0 +1,59 @@
+#product.clearfix
+    .product-gallery
+        .large-image
+            a#zoom1.cloud-zoom(href="images/product-gallery/very-large-image.jpg" rel="adjustX: 10, adjustY:-4, softFocus:true")
+                img(src="images/product-gallery/large-image.jpg" alt="")
+        ul.clearfix
+            li
+                a.thumbnail.cloud-zoom-gallery(href="images/product-gallery/very-large-image.jpg" title="Thumbnail 1" rel="useZoom: 'zoom1', smallImage: 'images/product-gallery/large-image.jpg' ")
+                    img(src="images/product-gallery/thumb_1.jpg")
+            li
+                a.thumbnail.cloud-zoom-gallery(href="images/product-gallery/very-large-image2.jpg" title="Thumbnail 2" rel="useZoom: 'zoom1', smallImage: 'images/product-gallery/large-image2.jpg' ")
+                    img(src="images/product-gallery/thumb_2.jpg")
+            li
+                a.thumbnail.cloud-zoom-gallery(href="images/product-gallery/very-large-image3.jpg" title="Thumbnail 3" rel="useZoom: 'zoom1', smallImage: 'images/product-gallery/large-image3.jpg' ")
+                    img(src="images/product-gallery/thumb_3.jpg")
+            li
+                a.thumbnail.cloud-zoom-gallery(href="images/product-gallery/very-large-image4.jpg" title="Thumbnail 4" rel="useZoom: 'zoom1', smallImage: 'images/product-gallery/large-image4.jpg' ")
+                    img(src="images/product-gallery/thumb_4.jpg")
+    .product-detail
+        h2
+            a(href="#") Sample Product
+        cite By Lorem Ipsum
+        p Product Code: 123456
+        p Reward Points: 9
+        p Availability:#[span In Stock]
+        p.price Price: $40.50
+        p.tax TAX: $5.99
+        form.options-form(method="get" action="#")
+            fieldset
+                .available-options
+                    label(for="options") Size:
+                    select(#options)
+                        option(value="32") 32
+                        option(value="40") 40
+                        option(value="42") 42
+                        option(value="44") 44
+                p.qty
+                    label Quantity
+                    input(type="text" value="1")
+                input(type="submit" value="ADD TO CART").submit-btn
+        p.add-links
+            a(href="#") +Add to Wish List
+            a(href="#") + Add to Compare
+        .clearfix.rat-rev
+            .rating
+                a.yellow(href="#") &nbsp;
+                a.yellow(href="#") &nbsp;
+                a.yellow(href="#") &nbsp;
+                a.gray(href="#") &nbsp;
+                a.gray(href="#") &nbsp;
+            p.review
+                a.review-count(href="#") 1 Review
+                a(href="#") Write a Review
+        ul.icons
+            li: a.tw(href="#") &nbsp;
+            li: a.fb(href="#") &nbsp;
+            li: a.print(href="#") &nbsp;
+            li: a.email(href="#") &nbsp;
+            li: a.share(href="#") &nbsp;

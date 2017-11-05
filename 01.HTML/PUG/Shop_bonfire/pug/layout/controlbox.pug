@@ -1,0 +1,26 @@
+-
+    var currencyList = {
+        "dollar" : "Dollar",
+        "euro" : "Euro",
+        "pound" : "Pound",
+        "dirham" : "Dirham",
+        "riyal" : "Riyal"
+    }
+.bottom-wrapper
+    #bottom.clearfix
+        strong.welcome-message Welcome visitor you can #[a(href="login.html") login] or #[a(href="login.html") create an account].
+        .right
+            ul.social-nav.clearfix
+                li: a.rss(href="#")
+                li: a.fb(href="#")
+                li: a.tw(href="#")
+                li: a.skype(href="#")
+            form.choose-currancy(method="get" action="#")
+                fieldset
+                    select#header-select
+                        each val,index in currencyList
+                            option(value=index)=val
+            form.search(method="get" action="#")
+                fieldset
+                    input#s(type="text" name="s" value="Search")
+                    input.submit(type="submit" value="Submit")

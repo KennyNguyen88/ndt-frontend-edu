@@ -1,0 +1,29 @@
+extends pug/template
+include pug/utility/mixins
+append styles
+    link(rel="stylesheet" type="text/css" media="all" href="css/style.css")
+append content
+    - var breadcrumbs = ["Home","Account","Login"]
+    p#breadcrumbs
+        +mixBreadcrumb(breadcrumbs)
+    .clearfix
+        .new-customer
+            h3
+                span NEW CUSTOMER
+            p
+                a.reg(href="#") Register Account
+                p.msg By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of<br />the orders you have previously made.
+                a.cont Continue
+        .login
+            h3
+                span RETURNING CUSTOMER
+            p I am a returning customer
+            form.login-form(method="post" action="#")
+                fieldset
+                    input#email(type="text" value="Email Address")
+                    input#pw(type="password" value="Password")
+                    p
+                        a(href="#") Forgotten Password
+                    input.login-btn(type="submit" value="Login")
+append scripts
+    script(type="text/javascript" src="js/script.js")

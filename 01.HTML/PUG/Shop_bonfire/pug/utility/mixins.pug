@@ -1,0 +1,52 @@
+mixin mixProductList(header, list)
+    .product-listing
+        h3
+            span=header
+        ul.clearfix
+            each val,index in list
+                if index==(list.length - 1)
+                    li.product.last
+                        a.thumb(href="product.html")
+                            img(src=val["img"])
+                        a.title(href="product.html")=val["product-name"]
+                        .clearfix.info
+                            a.add-to-card(href="#") ADD TO CART
+                            span.price-text $
+                                span=val["product-price"]
+                else
+                    li.product
+                        a.thumb(href="product.html")
+                            img(src=val["img"])
+                        a.title(href="product.html")=val["product-name"]
+                        .clearfix.info
+                            a.add-to-card(href="#") ADD TO CART
+                            span.price-text $
+                                span=val["product-price"]
+mixin mixPagination(_total, _activeindex)
+    - var i = 1;
+    p.pagination
+        a(href="#") <
+        while i < (_total+1)
+            if i==_activeindex
+                a.active(href="#")=i
+            else
+                a(href="#")=i
+            - i = i +1
+        a(href="#") >
+mixin mixFooterLink(_title, list)
+    h3=_title
+        ul
+            each val,index in list
+                li: a(href=index)=val
+mixin mixBreadcrumb(list)
+    each val,index in list
+        if index!=(list.length-1)
+            a(href="#")=val
+        else
+            span.active=val
+mixin mixSidebar(header,list)
+    h3
+        span=header
+    ul
+        each val in list
+            li: a(href="#")=val

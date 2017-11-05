@@ -1,0 +1,43 @@
+-
+    var imgPath = "images/slider/";
+    var slideList = [
+        {
+            "link" : "product.html",
+            "img" : "slide1.jpg",
+            "imgalt" : "diamonds on the soles of her shoes",
+            "desc" : "Shoes with Diamonds - Now Available for just",
+            "price" : "89.99"
+        },
+        {
+            "link" : "product.html",
+            "img" : "slide2.jpg",
+            "imgalt" : "suit for the soles of his body",
+            "desc" : "Lorem Suit - Now Available for just",
+            "price" : "99.99"
+        },
+        {
+            "link" : "product.html",
+            "img" : "slide3.jpg",
+            "imgalt" : "cool camera",
+            "desc" : "Top Selling Camera - Now Available for just",
+            "price" : "80.50"
+        },
+        {
+            "link" : "product.html",
+            "img" : "slide4.jpg",
+            "imgalt" : "comfortable sofa",
+            "desc" : "White Sofa - Now Available for just",
+            "price" : "120"
+        }
+    ]
+#slider
+    .slides#slides
+        each val in slideList
+            .slide
+                a(href=val["link"])
+                    img(src=imgPath+val["img"] alt=val["imgalt"])
+                .caption
+                    a.purchase-btn(href=val["link"])
+                    p=val["desc"]
+                        span.price $#{val["price"]}
+    #slider-pager

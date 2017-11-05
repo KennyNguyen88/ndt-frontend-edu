@@ -1,0 +1,20 @@
+-
+    var topNav = {
+        "#": "WISH LIST (0)",
+        "login.html": "MY ACCOUNT",
+        "shopping-cart.html" : "SHOPPING CART",
+        "checkout.html" : "CHECK OUT"
+    }
+.header-wrapper
+    #header.clearfix
+        a.logo(href="index-2.html")
+            img(src="images/logo.png" alt="BonFire Logo")
+        strong.slogan SO TURN THE LIGHTS OUT
+        ul.top-nav
+            each val,index in topNav
+                li: a(href=index)=val
+            li
+                a.cart(href="#")
+                span.cart-bubble 0
+
+

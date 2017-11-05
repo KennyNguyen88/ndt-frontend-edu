@@ -1,0 +1,89 @@
+extends pug/template
+include pug/utility/mixins
+append styles
+    link(rel="stylesheet" type="text/css" media="all" href="css/style.css")
+append content
+    - var breadcrumbs = ["Home","Blog"]
+    p#breadcrumbs
+        +mixBreadcrumb(breadcrumbs)
+    .inner-container.clearfix
+        #blog
+            h3.main-heading
+                span BLOG
+            .post
+                a.post-feature-image(href="#")
+                    img(src="images/blog/post-image-1.jpg" alt="Post Image 1")
+                .header
+                    a.arrow &nbsp;
+                    .meta
+                        .date 18
+                        .month-year
+                            span JAN
+                            span 2012
+                    .title
+                        h2: a(href="#") Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                        p
+                            span
+                                | Posted By
+                                a(href="#")  Admin
+                            |  /
+                            span
+                                |  Comments
+                                a(href="#")  24
+                p.post-detail Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. sed quia consequuntur magni dolores eos qui
+                a.read-more(href="#") Read More
+            .post
+                a.post-feature-image(href="#")
+                    img(src="images/blog/post-image-2.jpg" alt="Post Image 2")
+                .header
+                    a.arrow &nbsp;
+                    .meta
+                        .date 18
+                        .month-year
+                            span JAN
+                            span 2012
+                    .title
+                        h2: a(href="#") Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                        p
+                            span
+                                | Posted By
+                                a(href="#")  Admin
+                            |  /
+                            span
+                                |  Comments
+                                a(href="#")  24
+                p.post-detail Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. sed quia consequuntur magni dolores eos qui
+                a.read-more(href="#") Read More
+            .post
+                a.post-feature-image(href="#")
+                    img(src="images/blog/post-image-3.jpg" alt="Post Image 3")
+                .header
+                    a.arrow &nbsp;
+                    .meta
+                        .date 18
+                        .month-year
+                            span JAN
+                            span 2012
+                    .title
+                        h2: a(href="#") Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                        p
+                            span
+                                | Posted By
+                                a(href="#")  Admin
+                            |  /
+                            span
+                                |  Comments
+                                a(href="#")  24
+                p.post-detail Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. sed quia consequuntur magni dolores eos qui
+                a.read-more(href="#") Read More
+
+        #sidebar
+            - var categories = ["Bags","Shoes","Lorems","Ipsums","Dresses","Jewellery","Furniture"]
+            div
+                +mixSidebar("CATEGORIES",categories)
+            - var archives = ["July 2011","June 2011","May 2011","April 2011","March 2011","February 2011","January 2011"]
+            div
+                +mixSidebar("ARCHIVES",archives)
+    +mixPagination(7,1)
+append scripts
+    script(type="text/javascript" src="js/script.js")

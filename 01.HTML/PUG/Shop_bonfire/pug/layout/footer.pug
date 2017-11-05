@@ -1,0 +1,34 @@
+-
+    var links = {
+        "#1" : "About Us",
+        "#2" : "Delivery Information",
+        "#3" : "Privacy Policy",
+        "#4" : "Terms &amp; Conditions",
+        "#5" : "Site Map",
+        "#6" : "Contact Us"
+    };
+    var accounts = {
+        "#1" : "My Account",
+        "#2" : "Order History",
+        "#3" : "Wish List",
+        "#4" : "Newsletter",
+        "#5" : "Returns"
+    };
+    var extras = {
+        "#1" : "Brands",
+        "#2" : "Gift Vouchers",
+        "#3" : "Affiliates",
+        "#4" : "Specials"
+    }
+
+.footer-wrapper
+    #footer.clearfix
+        .column.double
+            a(href="index-2.html") #[img(src="images/footer-logo.png" alt="Bonfire")]
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium nisi id sapien cursus eu lobortis libero imperdiet. Aliquam erat volutpat. Pellentesque lacus urna, pellentesque non vehicula ac, adipiscing scelerisque eros. Mauris id tortor vitae velit auctor convallis nec non metus. Praesent eget dictum mauris. Sed vitae lorem et magna lacinia ultricies et non purus.
+        .column
+            +mixFooterLink("LINKS",links)
+        .column
+            +mixFooterLink("MY ACCOUNTS",accounts)
+        .column.last
+            +mixFooterLink("EXTRAS",extras)

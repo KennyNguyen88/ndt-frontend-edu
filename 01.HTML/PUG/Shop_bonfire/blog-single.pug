@@ -1,0 +1,88 @@
+extends pug/template
+include pug/utility/mixins
+append styles
+    link(rel="stylesheet" type="text/css" media="all" href="css/style.css")
+append content
+    - var breadcrumbs = ["Home","Blog"]
+    p#breadcrumbs
+        +mixBreadcrumb(breadcrumbs)
+    .inner-container.clearfix
+        #blog
+            h3.main-heading
+                span BLOG
+            .post
+                a.post-feature-image(href="#")
+                    img(src="images/blog/post-image-1.jpg" alt="Post Image 1")
+                .header
+                    a.arrow &nbsp;
+                    .meta
+                        .date 18
+                        .month-year
+                            span JAN
+                            span 2012
+                    .title
+                        h2 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                        p
+                            span
+                                | Posted By
+                                a(href="#")  Admin
+                            |  /
+                            span
+                                |  Comments
+                                a(href="#")  24
+                p.post-detail Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. sed quia consequuntur magni dolores eos qui
+            .author.clearfix
+                a.author-avatar(href="#")
+                    img(src="images/author.jpg" alt="Joh Doe The Author")
+                .author-detail
+                    h4
+                        span Article by
+                        a(href="#") Johndoe
+                        p.meta
+                            span Member since
+                            a 11/10/2011
+                            span Posted
+                            a(href="#") 24 Articles
+                        p.paragraph Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Netmo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            .comments
+                h4.heading 50 Comments
+                ul.comment-list
+                    - var i = 1
+                    while i < 4
+                        - i = i + 1
+                        li.clearfix
+                            a.comment-avatar(href="#")
+                                img(src="images/author.jpg" alt="Joh Doe The Author")
+                            .comment-detail
+                                h4
+                                    a(href="#") Johndoe
+                                    |  /
+                                    span  Dec 01/20011
+                                p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Netmo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                                a.reply(href="#") Reply
+                form.comment-form(method="post" action="#")
+                    h3 Leave a Comment
+                    div
+                        fieldset.clearfix
+                            label(for="name") Name:
+                            input#name(type="text")
+                        fieldset.clearfix
+                            label(for="email") Email:
+                            input#email(type="text")
+                        fieldset.clearfix
+                            label(for="url") Website:
+                            input#url(type="text")
+                        fieldset.clearfix
+                            label(for="message") Comment:
+                            textarea#message(cols="5" rows="5")
+                        fieldset.submit-button.clearfix
+                            input.submit(type="submit" value="Submit")
+        #sidebar
+            - var categories = ["Bags","Shoes","Lorems","Ipsums","Dresses","Jewellery","Furniture"]
+            div
+                +mixSidebar("CATEGORIES",categories)
+            - var archives = ["July 2011","June 2011","May 2011","April 2011","March 2011","February 2011","January 2011"]
+            div
+                +mixSidebar("ARCHIVES",archives)
+append scripts
+    script(type="text/javascript" src="js/script.js")

@@ -1,0 +1,73 @@
+extends pug/template
+include pug/utility/mixins
+append styles
+    link(rel="stylesheet" type="text/css" media="all" href="css/style.css")
+append content
+    - var breadcrumbs = ["Home","Shopping Cart"]
+    p#breadcrumbs
+        +mixBreadcrumb(breadcrumbs)
+    .inner-container
+        .cart
+            h3
+                span SHOPPING CART
+            table
+                tr
+                    th Remove
+                    th Image
+                    th.name-header Name
+                    th Model
+                    th Item No.
+                    th Quantity
+                    th Unit Price
+                    th Total
+                tr
+                    td: input(type="checkbox")
+                    td.thumb: img(src="images/thumb.png")
+                    td.name Onesie
+                    td: a(href="#") 0ABFG
+                    td: a(href="#") 1536
+                    td.qty: input(type="text" value="1")
+                    td $45.00
+                    td.red $45.00
+                tr
+                    td: input(type="checkbox")
+                    td.thumb: img(src="images/thumb.png")
+                    td.name Onesie
+                    td: a(href="#") 0ABFG
+                    td: a(href="#") 1536
+                    td.qty: input(type="text" value="1")
+                    td $45.00
+                    td.red $45.00
+                tr
+                    td: input(type="checkbox")
+                    td.thumb: img(src="images/thumb.png")
+                    td.name Onesie
+                    td: a(href="#") 0ABFG
+                    td: a(href="#") 1536
+                    td.qty: input(type="text" value="1")
+                    td $45.00
+                    td.red $45.00
+                tr
+                    td: input(type="checkbox")
+                    td.thumb: img(src="images/thumb.png")
+                    td.name Onesie
+                    td: a(href="#") 0ABFG
+                    td: a(href="#") 1536
+                    td.qty: input(type="text" value="1")
+                    td $45.00
+                    td.red $45.00
+            .clearfix
+                .left-column
+                    input#coupon-code(type="text" value="Coupon Code:")
+                    a.apply Apply
+                .right-column
+                    p Sub Total: $0.00
+                    p Vat 17%: $0.00
+                    p.total Total: $0.00
+                    p
+                        a.checkout Checkout
+                        a.update Update
+                    p: a(href="#") Continue Shopping &rarr;
+
+append scripts
+    script(type="text/javascript" src="js/script.js")
