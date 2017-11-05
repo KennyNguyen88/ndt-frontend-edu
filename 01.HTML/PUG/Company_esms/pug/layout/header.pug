@@ -1,0 +1,18 @@
+.bg-inverse
+    .container
+        nav.navbar.navbar-toggleable-md.navbar-inverse.bg-inverse(style="box-shadow: none")
+            button.navbar-toggler.navbar-toggler-right(type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation")
+                span.navbar-toggler-icon
+            a.navbar-brand: img.img-fluid(src="images/Esms_logo.png" alt="esms.vn" title="esms.vn" width=150)
+            #navbarToggler.collapse.navbar-collapse
+                ul.nacbar-nav.navbar-inverse.bg-inverse(style="box-shadow: none")
+                    - var navList = ["Trang chủ","Chính sách giá","Khách hàng","SMS API","Bloh","Đại Lý","Liên hệ"]
+                        each val in navList
+                            li.nav-item: a.nav-link(href="#")=val
+                    li.nav-item.dropdown
+                        a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") #[img(src="images/vn.png")]
+                        .dropdown-menu.bg-inverse(aria-labelledby="navbarDropdownMenuLink")
+                            a.dropdown-item(href="#")
+                                img(src="images/us.png" width="25" style="margin:0")
+                    li.nav-item: a.nav-link(href="#") Đăng Nhập
+                    li.nav-item: a.nav-link(href="#" style="border: solid 2px white;padding: 5px 10px;") ĐĂNG KÝ NGAY

@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+        meta(name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        block title
+        block styles
+            link(rel="stylesheet" href="css/font-awesome.min.css")
+            link(rel="stylesheet" href="css/font-elegant.css")
+            link(rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
+            link(rel="stylesheet" href="css/styles.css")
+    body(style="font-size: 14px")
+        include layout/header
+        block content
+        include layout/footer
+        block scripts
+            script(src="js/lib/jquery.min.js")
+            script(src="js/lib/tether.min.js")
+            script(src="js/lib/bootstrap.min.js")
+            script(src="js/lib/jquery.tabslet.min.js")
+            script(src="js/lib/tableHeadFixer.js")
+            script(type="text/javascript").
+                $(document).ready(function () {
+                    $('.tabs').tabslet({
+                        mouseevent: 'click',
+                        attribute: 'href',
+                        animation: true
+                    });
+                    $("#sms-table").tableHeadFixer({"left": 1});
+                    $("#voice-table").tableHeadFixer({"left": 1});
+                });
