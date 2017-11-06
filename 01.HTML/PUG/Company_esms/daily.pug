@@ -5,7 +5,7 @@ block content
     section#sms-banner-style-1
         .row.no-gutters
             .col
-                img.img-fluid(src="images/banner-bg.jpg" style="width: 100%")
+                img.img-fluid(src="images/banner-bg.png" style="width: 100%")
                 .title
                     h1: span Hop tac - Phat trien
                     h3 Cung eSMS
@@ -142,4 +142,27 @@ block content
                             textarea#remark(name="remark" rows="3" placeholder="Ghi chu")
                             a(href="#")
                                 p.btn-send Send message
+block append scripts
+    script(type="text/javascript").
+        $(document).ready(function () {
+            $('#myCarousel').carousel({
+                interval: 10000
+            });
+
+            $('.carousel .carousel-item').each(function () {
+                var next = $(this).next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+
+                if (next.next().length > 0) {
+                    next.next().children(':first-child').clone().appendTo($(this));
+                }
+                else {
+                    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+                }
+            });
+        });
+
 
