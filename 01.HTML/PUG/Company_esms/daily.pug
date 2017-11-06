@@ -1,0 +1,145 @@
+extends pug/template
+block title
+    title ESMS - Page Dai Ly
+block content
+    section#sms-banner-style-1
+        .row.no-gutters
+            .col
+                img.img-fluid(src="images/banner-bg.jpg" style="width: 100%")
+                .title
+                    h1: span Hop tac - Phat trien
+                    h3 Cung eSMS
+    section#sms-profits
+        .container
+            .row
+                .col.text-center
+                    h1 Loi ich khi tro thanh thanh vien
+            .row
+                .col-12.col-md-6.offset-sm-0.push-md-3.img-idx
+                    img.img-fluid.top-pd-50(src="images/iMac.png")
+                .col-12.col-md-3.pull-md-6
+                    .row
+                        .col-12.col-md-12.prof-item
+                            .n-1-br-left
+                                .n-1-br-right
+                                    .n-1-br-top
+                                        img.img-number(src="images/01.png")
+                            img(src="images/sms-marketing.png")
+                            p SMS Marketing la hinh thuc marketing ma bat cu to chuc hoac doanh nghiep nao deu co the su dung
+                        .col-12.col-md-12.prof-item
+                            .n-2-br-left
+                                .n-2-br-top
+                                    img.img-number(src="images/02.ong")
+                            img(src="images/sms-marketing-1.png")
+                            p Khong ton nhieu chi phi de xay dung mang luoi SMS Marketing. Ban chi can ban kem dich vu SMS voi dich vu cua ban
+                        .col-12.col-md-12.prof-item
+                            .n-3-br-left
+                                .n-3-br-right
+                                    .n-3-br-top
+                                        img.img-number(src="images/03.png")
+                            img(src="images/marketing.png")
+                            p Khong can phai co he thong SMS chuyen nghiep. Chi can gioi thieu den cac khach hang cua ban
+                .col-12.col-md-3
+                    .col-12.col-md-12.prof-item
+                        .n-4-br-left
+                            .n-4-br-right
+                                .n-4-br-top
+                                    img.img-number(src="images/04.png")
+                            img(src="images/Vector-Smart-Object-1.png")
+                            p
+                                | Chung toi se luon ho tro.
+                                br
+                                | Ho tro thu tuc dang ky ho so cho khach hang cuoi
+                    .col-12.col-md-12.prof-item
+                        .n-5-br-left
+                            .n-5-br-top
+                                img.img-number(src="images/05.png")
+                        img(src="images/support-man.png")
+                        p
+                            | Chung toi se luon ho tro.
+                            br
+                            | Ho tro tich hop, xay dung he thong, khac phuc su co phat sinh
+                    .col-12.col-md-12.prof-item
+                        .n-6-br-left
+                            .n-6-br-right
+                                .n-6-br-top
+                                    img.img-number(src="images/06.png")
+                        img(src="images/Vector-Smart-Object.png")
+                        p Muc hoa hong cuc cao tu 10-25% tuy theo su gia tang ve so luong khach hang
+    section#sms-agency
+        .container
+            .row
+                .col.text-center
+                    h1 Cac don vi phu hop de tro thanh dai ly hoac CTV cua #[span(style="text-transform: none") e] SMS
+                    p Doanh nghiep hoac ca nhan lam viec trong cac nganh sau day phu hop de tro thanh dai ly, CTV cua eSMS
+            .col.carousel_container
+                #myCarousel.carousel.slide.mx-auto(data-ride="carousel")
+                    ol.carousel-indicators
+                        li.active(data-target="#myCarousel" data-slide-to="0")
+                        li(data-target="#myCarousel" data-slide-to="1")
+                        li(data-target="#myCarousel" data-slide-to="2")
+                    .carousel-inner(role="listbox")
+                        .carousel-item.active
+                            .col-12.col-md-4
+                                a(href="#"): img.img-fluid(src="images/vienthong.png")
+                                .carousel-caption.d-md-block.text-left: p Vien Thong
+                        .carousel-item
+                            .col-12.col-md-4
+                                a(href="#"): img.img-fluid(src="images/cntt.png")
+                                .carousel-caption.d-md-block.text-left: p Cong Nghe Thong Tin
+                        .carousel-item
+                            .col-12.col-md-4
+                                a(href="#"): img.img-fluid(src="images/ss-digital-marketing.png")
+                                .carousel-caption.d-md-block.text-left: p Marketing
+    section#sms-cooperate
+        .container
+            .row
+                .col.text-center
+                    h1 Cac hinh thuc hop tac voi #[span(style="text-transform: none") e] SMS
+                    p Hien eSMS.vn dang co 3 hinh thuc hop tac
+            .row
+                .col-12.col-md-4.coop-box
+                    img(src="images/hinhthuc1.png")
+                    .coop-content
+                        h6 Cong tac vien gioi thieu
+                        p Chi can gioi thieu cac doanh nghiep khac theo duong link Affiliate, khi khach hang gioi thieu phat sinh doanh thu, ban se duoc chiet khau tu 10 - 15% tuy doanh so
+                .col-12.col-md-4.coop-box
+                    img(src="images/hinhthuc2.png")
+                    .coop-content
+                        h6 Tich hop dich vu SMS
+                        p Tich hop cac dich vu co san nhu cac phan mem CRM, POS, HRM. Chung toi se de gia goc va ban co quyen quyet dinh gia ban ra cho khach hang
+                .col-12.col-md-4.coop-box
+                    img(src="images/hinhthuc3.png")
+                    .coop-content
+                        h6 Dai ly voi he thong rieng
+                        p Chung toi se thiet lap mot he thong kinh doanh hoan chinh voi day du tinh nang eSMS.vn voi thuong hieu cua ban, ban se tu quyet dinh chinh sach gia de ban cho khach hang, moi van de ky thuat eSMS se ho tro
+    section#sms-registering
+        img.img-bg(src="images/apple-bg-1.png")
+        .container.registering-box
+            .row
+                .col.text-center
+                    h1 Dang ky thanh vien ngay bay gio
+            .row
+                .col-12.col-md-6
+                    .reg-content
+                        h2 eSMS.vn
+                        p ESMS la chuong trinh duoc ra doi voi mong muon giup cac cua hang, doanh nghiep thuc hien cac chuong trinh quang cao, tiep thi mot cach hieu qua nhat, tiet kiem thoi gian nhat va dac biet de dang nhat.
+                        p Address: 231 Chu Van An, Phuong 26, Binh Thanh, HCM
+                        p Phone: 090 3838 700
+                        p Email: linhtt@vihat.vn
+                .col-12.col-md-6
+                    .reg-form
+                        form(action="")
+                            input#name(type="text" name="name" placeholder="Ten*")
+                            input#email(type="text" name="email" placeholder="Email*")
+                            input#tel(type="text" name="tel" placeholder="Dien Thoai")
+                            input#fields(type="text" name="fields" placeholder="Linh Vuc")
+                            .rdo_grp
+                                input#rdo_fields1(type="radio" name="rdo_fields" checked)
+                                label(for="rdo_fields1") #[span] Dai ly
+                                input#rdo_fields2(type="radio" name="rdo_fields")
+                                label(for="rdo_fields2") #[span] Thanh Vien
+                            textarea#remark(name="remark" rows="3" placeholder="Ghi chu")
+                            a(href="#")
+                                p.btn-send Send message
+

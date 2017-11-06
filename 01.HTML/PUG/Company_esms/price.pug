@@ -2,4 +2,215 @@ extends pug/template
 block title
     title ESMS - Page Price
 block content
-    p content
+    section#sms-price-price.tabs.tabs_animate
+        ul.d-flex.justify-content-center
+            li.no-pre.active: a.sms-btn-border-white-blue(href="#tab-sms") Bảng giá SMS
+            li.no-pre: a.sms-btn-border-white-blue(href="#tab-voice" style="margin-left: -4px") Bang gia VOICE
+        #tab-sms
+            .cover
+                .container
+                    .row
+                        .col.col-sm-6.push-sm-3.text-center.mb-xl-2
+                            h3 Bang gia dich vu SMS Marketting - Cham soc khach hang
+                            p Hien tai eSMS.vn cung cap 2 hinh thuc tin nhan chinh
+                    .row.no-gutters
+                        .col-sm-12.hidden-lg-up.text-center
+                            img.img-fluid(src="images/phone.png" style="margin-bottom: 20px")
+                        .col-sm-12.col-lg-3
+                            .row.no-gutters
+                                .col-sm-10.col-md-12.col-xl-12
+                                    h5 Tin nhan thuong hieu (Brand name)
+                                    p la tin nhan hien thi ten cong ty o muc nguoi gui
+                                    p tin nhan brand name duoc phan lam 2 loai: tin nhan quang cao va tin nhan cham soc khach hang
+                                    .hidden-sm-down
+                                        ul
+                                            li.plus-pre
+                                                span.font-italic.font-weight-bold Tin nhan quang cao - SMS marketing:
+                                                | la tin nhan de thong bao cac chuong trinh khuyen mai, gioi thieu san pham dich vu moi
+                                            li.plus-pre
+                                                span.font-italic.font-weight-bold Tin nhan cham soc khach hang
+                                                | la tin nhan khong mang cac thong tin khuyen mai, vi du tin nhan chuc mung sinh nhat, thong bao diem tich luy, thong bao so du tai khoan ngan hang...
+                                    .hidden-sm-up
+                                        input#post-1.read-more-state(type="checkbox")
+                                        ul.read-more-wrap
+                                            li.read-more-target.plus-pre
+                                                span.font-italic.font-weight-bold Tin nhan quang cao - SMS marketing:
+                                                    | la tin nhan de thong bao cac chuong trinh khuyen mai, gioi thieu san pham dich vu moi
+                                            li.read-more-target.plus-pre
+                                                span.font-italic.font-weight-bold Tin nhan cham soc khach hang
+                                                    | la tin nhan khong mang cac thong tin khuyen mai, vi du tin nhan chuc mung sinh nhat, thong bao diem tich luy, thong bao so du tai khoan ngan hang...
+                                        label.read-more-trigger(for="post-1")
+                                            label.read-more-arrow(for="post-1")
+                    .row.no-gutters
+                        p.text-blue(style="text-decoration: underline") Bang gia - da bao gom VAT
+                    .row.no-gutters
+                        .col-sm-12.mb-1.col-lg-6
+                            table#sms-table.table
+                                thead
+                                    tr
+                                        th(style="border-right: 1px solid white") Loai tin nhan
+                                        th(style="border-right: 1px solid white") San luong < 5000 tin
+                                        th(style="border-right: 1px solid white") San luong >= 5000 tin
+                                        th(style="border-right: 1px solid white") Chi phi khoi tao he thong
+                                        th Chi phi duy tri he thong
+                                tbody
+                                    tr
+                                        th(scope="row" style="border-bottom: 2px solid white") Brandname
+                                        td(style="border-bottom: 2px solid #ecf0f1") 540d / tin
+                                        td(rowspan="2")
+                                            | Lien he
+                                            i.ion-ios-telephone.colored-icon.mr-2.phone-st
+                                            span.phone-st(style="font-size: 13px") 090 2435 340
+                                        td.free-stl-1(rowspan="2") 100% FREE
+                                        td.free-stl-2(rowspan="2") 100% FREE
+                                    tr
+                                        th(scope="row") Dau so
+                                        td 280d / tin
+                            p.text-red.mt-2 * Chu y: bang gia nay ap dung cho tat cac cac mang vien thong
+                        .col-sm-12.col-lg-6.pl-lg-4
+                            .hidden-sm-down
+                                ul
+                                    li.minus-pre
+                                        | Khi quy khach co nhu cau su dung tin nhan san luong lon vui long lien he voi bo phan tu van de chung toi co the cung cap cac goi gia uu dai nhat cho quy khach
+                                        span.text-red
+                                            i.ion-ios-telephone.colored-icon.mr-2(style="font-size: 24px")
+                                            | 090 2435 340
+                                    li.minus-pre
+                                        | Bang gia brandname cham soc khach hang se phu thuoc vao cac ban dang kinh doanh trong linh vuc gi, do do vui long lien he
+                                        span.text-red
+                                            i.ion-ios-telephone.colored-icon.mr-2(style="font-size: 20px")
+                                            | 090 2435 340
+                                    li.minus-pre
+                                        | Cac nhom duoc uu tien:
+                                        span  Giao duc, Y te, Thuong mai dien tu, Hanh chinh cong
+                                    li.minus-pre
+                                        | Trong tin nhan se co huong dan cu phap cho phep cac khach hang tu choi nhan tin quang cao
+                            .hidden-sm-up
+                                input#post-3.read-more-state(type="checkbox")
+                                ul.read-more-wrap
+                                    li.minus-pre
+                                        | Khi quy khach co nhu cau su dung tin nhan san luong lon vui long lien he voi bo phan tu van de chung toi co the cung cap cac goi gia uu dai nhat cho quy khach
+                                        span.text-red
+                                            i.ion-ios-telephone.colored-icon.mr-2(style="font-size: 24px")
+                                            | 090 2435 340
+                                    li.read-more-target.inus-pre
+                                        | Bang gia brandname cham soc khach hang se phu thuoc vao cac ban dang kinh doanh trong linh vuc gi, do do vui long lien he
+                                        span.text-red
+                                            i.ion-ios-telephone.colored-icon.mr-2(style="font-size: 20px")
+                                            | 090 2435 340
+                                    li.read-more-target.minus-pre
+                                        | Cac nhom duoc uu tien:
+                                        span  Giao duc, Y te, Thuong mai dien tu, Hanh chinh cong
+                                    li.read-more-target.minus-pre
+                                        | Trong tin nhan se co huong dan cu phap cho phep cac khach hang tu choi nhan tin quang cao
+                                label.read-more-trigger(for="post-3")
+                                    label.read-more-arrow(for="post-3")
+            section#sms-price-contact-sms.mt-3
+                .d-flex.justify-content-center
+                    a.sms-btn-border-blue-white-n.hidden-sm-down(href="#") Dang ky dung thu
+                    a.sms-btn-border-blue-white-n.hidden-sm-up(href="#") Dang ky dung thu
+                    p.mt-2.mb-0
+                        span(style="font-family: ElegantIcons; color: #ee5953e; font-size: 24px") &#xe008;
+                        |   Tang ngay tin nhan mien phi
+                    p.text-red(style="font-size: 30px")
+                        i.ion-ios-telephone.colored-icon.mr-2(style="font-size: 34px")
+                        |  090 2435 340
+
+        #tab-voice
+            .cover
+                .container
+                    .row
+                        .col.col-sm-6.push-sm-3.text-center.mb-xl-2
+                            h3 Giai phap goi tu dong - eSMS Voice API
+                            p la giai phap giup doanh nghiep tao cac cuoc goi tu dong den khach hang de nhac nho canh bao va tuong tac voi khach hang
+                    .row.no-gutters.mb-md-4.mb-xl-4
+                        .col-sm-12.col-md-6.sms-price-left
+                            .row.no-gutters
+                                .col-sm-10
+                                    h5 Phuong an 1: su dung dau so cua eSMS
+                                    p.font-weight-bold Muc cuoc cuoc goi duoc tinh nhu sau
+                                    ul
+                                        li Chi phi co dinh moi cuoc goi: 70d
+                                        li Block 6 giay dau tien: 150d
+                                        li Moi giay ke tiep: 25d
+                            .row.no-gutters
+                                .col-sm-10
+                                    p.text-red Minh Hoa
+                            .row.no-gutters
+                                table#voice-table
+                                    thead
+                                        tr
+                                            th(style="border-right: 1px solid white") Thoi luong
+                                            th(style="border-right: 1px solid white") Chi phi co dinh
+                                            th(style="border-right: 1px solid white") Chi phi cuoc goi
+                                            th Tong chi phi
+                                    tbody
+                                        tr
+                                            th(scope="row" style="border-right: 1px solid #ccc") Cuoc goi 5 giay
+                                            td(scope="row" style="border-right: 1px solid #ccc") 70
+                                            td(scope="row" style="border-right: 1px solid #ccc") 150
+                                            td 70 + 150
+                                        tr
+                                            th(scope="row" style="color: #943654; background-color: white; border-right: 1px solid #ccc") Cuoc goi 10 giay
+                                            td(scope="row" style="border-right: 1px solid #ccc") 70
+                                            td(scope="row" style="border-right: 1px solid #ccc") 150 + (10-6)*25
+                                            td 70 + 150 + (10-6)*25 = 320
+                        .col.sm-12.mt-4.mt-md-0.col-md-6.sms-price-right
+                            .row.no-gutters
+                                .col-sm-10
+                                    h5 Phuong an 2: su dung dau so cua khach hang
+                                    p.font-weight-bold - Muc cuoc cuoc goi duoc tinh nhu sau
+                                    ul
+                                        li Chi phi co dinh moi cuoc goi: 110d
+                                        li(style="line-height: 25px") Chi phi cuoc goi phat sinh khach hang tu thanh toan cho cac nha cung cap dau so cua khach hang
+                                    p.font-weight-bold - Chi phi cuoc goi co dinh chi bi phat sinh khi khach hang bat may va do dai cuoc goi toi thieu la 1 giay
+                            .row
+                                .col.sm-12.mb-4.col-md-6
+                                    a.sms-btn-border-blue-white-n.btn-block.hidden-sm-up(href="#") Danh ky dung thu
+                                    a.sms-btn-border-blue-white-n.hidden-sm-down.pull-right(href="#") Dang ky dung thu
+                                .col-sm-12.col-md-6
+                                    a.sms-btn-border-white-blue-n.btn-block.hidden-sm-up(href="#") Tim Hieu Them
+                                    a.sms-btn-border-white-blue-n.hidden-sm-down.pull-left(href="#") Tim Hieu Them
+            section#sms-price-contact-voice
+                h1.text-center Lien He
+                .d-flex.justify-content-center
+                    p
+                        i.ion-ios-telephone.colored-icon.mr-2(style="font-size: 24px")
+                        |  090 2435 340
+                    p
+                        i.ion-social-skype.colored-icon.mr-2(style="font-size: 24px")
+                        |  thaihabk05
+                .row
+                    .col.text-center
+                        a.sms-btn-border-white-blue-n.btn-block.hidden-sm-up(href="#" style="border: none") Dang ky su dung
+                        a.sms-btn-border-white-blue-n.hidden-sm-down(href="#" style="border: none") Dang ky su dung
+    section#sms-price-news
+        .container
+            h3.text-center Nhung bai viet noi bat trong tuan
+            .row
+                .col-12.col-md-3.coop-box
+                    img.img-fluid(src="images/price_noibat_01.png")
+                    .coop-content
+                        h6
+                            a(href="#") Cach ung dung SMS hieu qua trong doanh nghiep
+                        p SMS Marketing la 1 kenh cua Mobile Marketting, dang phat trien nhanh chong nho nhung tien bo cong nghe di dong
+                .col-12.col-md-3.coop-box
+                    img.img-fluid(src="images/price_noibat_02.png")
+                    .coop-content
+                        h6
+                            a(href="#") Huong dan tao tin nhan tren eSMS.vn
+                        p Cung voi tin nhan quang cao, tin nhan cham soc khach hang la 1 trong nhung hinh thuc chinh cua SMS Marketting
+                .col-12.col-md-3.coop-box
+                    img.img-fluid(src="images/price_noibat_02.png")
+                    .coop-content
+                        h6
+                            a(href="#") Ung dung SMS Marketting trong chien luoc kinh doanh
+                        p SMS Marketting mang lai hieu qua gi trong qua trinh kinh doanh cua ban ? Co can thiet phai su dung SMS Marketting khong ?
+                .col-12.col-md-3.coop-box
+                    img.img-fluid(src="images/price_noibat_02.png")
+                    .coop-content
+                        h6
+                            a(href="#") SMS Marketting - Nhu the nao la tin nhan cham soc khach hang
+                        p SMS Marketting hien la 1 kenh Marketting pho bien hien nay. Vay doi voi nganh nghe ban dang kinh doanh su dung SMS...
+
+
