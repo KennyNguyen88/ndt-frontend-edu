@@ -1,0 +1,96 @@
+section#banner
+    .container
+        nav.navbar.navbar-toggleable-md
+            button#btnMenu.navbar-toggler.navbar-toggler-right(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                span.icon_menu(aria-hidden="true")
+            a.navbar-brand(href="#")
+                img.img-fluid(src="images/logo.png")
+            #navbarSupportedContent.collapse.navbar-collapse.justify-content-end
+                ul.navbar-nav
+                    li.nav-item.active
+                        a#link_chinhsach.nav-link Tinh nang #[span.sr-only (current)]
+                    li.nav-item
+                        a#link_banggia.nav-link Bang gia
+                    li.nav-item
+                        a.nav-link(href="#") Ho tro
+                    li.nav-item
+                        a.nav-link(href="#") Blog
+                    li.nav-item
+                        a.nav-link(href="#") Lien He
+                    li.nav-item(style="cursor: pointer")
+                        .dropdown
+                            a#dropdownLanguage.btn.dropdown-toggle(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                                span.icon_globe-2.mr-2(aria-hidden="true")
+                                | Tieng Viet
+                            .dropdown-menu(aria-labelledby="dropdownLanguage")
+                                a.dropdown-item(href="#")
+                                    span.icon_globe-2.mr-2(aria-hidden="true")
+                                    | Tieng Viet
+                                a.dropdown-item(href="#")
+                                    span.icon_globe-2.mr-2(aria-hidden="true")
+                                    | Tieng Anh
+                    li.nav-item
+                        a.btn.btn-tera-nobg.hidden-md-down(href="#") Dang nhap
+                    i.nav-item
+                        a.nav-link.hidden-md-up(href="#") Dang nhap
+    .banner-slider
+        .fadeOut.owl-carousel.owl-theme
+            .item
+                img.bg-img(src="images/banner01_bg.png")
+                .phone-img
+                    .container-fluid
+                        .row.justify-content-sm-center
+                            .col-4.col-sm-3.col-md-3.push-md-3.offset-xs-4
+                                img(src="images/banner01_phone.png")
+            .item
+                img.bg-img(src="images/banner02_bg.png")
+                .phone-img
+                    .container-fluid
+                        .row.justify-content-sm-center
+                            .col-4.col-sm-3.col-md-3.push-md-3.offset-xs-4
+                                img(src="images/banner02_phone.png")
+            .item
+                img.bg-img(src="images/banner03_bg.png")
+                .phone-img
+                    .container-fluid
+                        .row.justify-content-sm-center
+                            .col-4.col-sm-3.col-md-3.push-md-3.offset-xs-4
+                                img(src="images/banner03_phone.png")
+            .item
+                img.bg-img(src="images/banner04_bg.png")
+                .phone-img
+                    .container-fluid
+                        .row.justify-content-sm-center
+                            .col-4.col-sm-3.col-md-3.push-md-3.offset-xs-4
+                                img(src="images/banner04_phone.png")
+            .item
+                img.bg-img(src="images/banner05_bg.png")
+                .phone-img
+                    .container-fluid
+                        .row.justify-content-sm-center
+                            .col-4.col-sm-3.col-md-3.push-md-3.offset-xs-4
+                                img(src="images/banner05_phone.png")
+            .item
+                img.bg-img(src="images/banner06_bg.png")
+                .phone-img
+                    .container-fluid
+                        .row.justify-content-sm-center
+                            .col-4.col-sm-3.col-md-3.push-md-3.offset-xs-4
+                                img(src="images/banner06_phone.png")
+        #slider-wrapper
+            .container
+                .row
+                    .col-12.justify-content-center
+                        .col-12.col-md-7
+                            .banner-content-wrapper
+                                h3 Tap ung dung mobile de hon bao gio het
+                                h5 Giai phap tao dung dung di dong ban hang va cham soc khach hang
+                                .email-group
+                                    .row
+                                        .col-12
+                                            input.btn_dang_ky.hidden-md-down.align-middle(type="text" placeholder="email")
+                                            a.btn.btn-tera-bluebg.btn_dang_ky.align-middle(href="#") Dang ky #[span.arrow_right.ml-1(aria-hidden="true")]
+                                div
+                                    a.btn.btn-tera-bluebg(href="#" data-toggle="modal" data-target="#videoModal")
+                                        span.arrow_trigangle-right.mr-1(aria-hidden="true")
+                                        | XEM VIDEO
