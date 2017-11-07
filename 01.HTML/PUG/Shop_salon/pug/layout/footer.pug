@@ -1,0 +1,20 @@
+footer
+    .container
+        .row
+            .col-xs-12.col-md-7
+                .col-lg-12.mt-2.subcribe-align
+                    input(type="text" placeholder="Subcribe newsletter")
+                    a.btn-subscribe(href="#") Send
+                .col-lg-5.text-center.mt-3
+                    a(href="#"): img(src="images/appstore.png")
+                    a(href="#"): img(src="images/googlestore.png")
+                .col-lg-7.social.text-center.mt-3
+                    - var socials = ["fa-facebook","fa-twitter","fa-linkedin","fa-feed","fa-google-plus","fa-pinterest-p"];
+                    each val in socials
+                        a(href="#"): i(class="fa "+val+" social-icon" aria-hidden="true")
+            .col-xs-12.col-md-5.salon-info
+                h1 Contact Info
+                p.inf-tel.ml-1 012 256 478
+                p.inf-address.ml-1 918 Poling Farm Road New York
+                p.inf-email.ml-1 info@salon.com
+    #footer-close

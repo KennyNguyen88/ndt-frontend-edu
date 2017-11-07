@@ -1,0 +1,89 @@
+extends pug/template/template_landing
+block content
+    .container
+        #header-landing
+            .logo
+                .row
+                    .col-xss-8.col-xs-5.col-md-3
+                        a.big-text(href="#") Goto
+                        a.small-text mySalon
+                    .col-xss-4.col-xs-5.col-md-4.col-xss-push-0.col-xs-push-2.col-md-push-5.user-panel
+                        .user-ctrl
+                            img.header-icon(src="images/login.png")
+                            a.login-text.mr-3(href="#") Log in
+                        .user-ctrl
+                            img.header-icon(src="images/signup.png")
+                            a.login-text(href="#") Sign Up
+                    .col-xs-12.col-md-5.col-md-pull-4.text-center.search-panel
+                        input(type="text" placeholder="Salon/City/ZIP code")
+                        a.btn-search(href="#") Search
+        #body-landing
+            .row
+                .col-xss-12.col-xs-6
+                    .about-us
+                        .caption
+                            h1 About Us
+                .col-xss-12.col-xs-6
+                    .book-online
+                        .caption
+                            h1 Book Online
+            .row.mt-3
+                .col-md-12
+                    #carousel-first.carousel.slide(data-ride="carousel")
+                        ol.carousel-indicators
+                            li.active(data-target="#carousel-first" data-slide-to="0")
+                            li(data-target="#carousel-first" data-slide-to="1")
+                        .carousel-inner(role="listbox")
+                            .item.active
+                                img(src="images/hand-1.png")
+                                .carousel-caption
+                                    h1: a(href="#") Service name $100 Nail Up
+                            .item.
+                                img(src="images/hand-1.png")
+                                .carousel-caption
+                                    h1: a(href="#") Service name $100 Nail Up
+            .row.mt-3
+                .col-md-5
+                    .col-md-12.address-1
+                        .caption-2
+                            h1: a(href="#") Nail Up
+                            p MD, Bethesda
+                            p 20814
+                    .col-md-12.address-2.mt-3
+                        .caption-2
+                            h1: a(href="#") Andy Lam
+                            p IL, Chicago
+                            p 60610
+                .col-md-7
+                    #carousel-third.carousel.slide(data-slide="carousel")
+                        ol.carousel-indicators
+                            li.active(data-target="#carousel-third" data-slide-to="0")
+                            li(data-target="#carousel-third" data-slide-to="1")
+                        .carousel-inner(role="listbox")
+                            .item.active
+                                img(src="images/salon3-1.png")
+                                .carousel-caption
+                                    h1: a(href="#") Posh Nails
+                                    p NC, Charlotte
+                                    p 28277
+                            .item
+                                img(src="images/salon3-1.png")
+                                .carousel-caption
+                                    h1: a(href="#") Posh Nails
+                                    p NC, Charlotte
+                                    p 28277
+            .row.mt-3
+                .col-md-12
+                    #carousel-second.carousel.slide(data-ride="carousel")
+                        ol.carousel-indicators
+                            li.active(data-target="#carousel-second" data-slide-to="0")
+                            li(data-target="#carousel-second" data-slide-to="1")
+                        .carousel-inner(role="listbox")
+                            .item.active
+                                img(src="images/hand-2-1.png")
+                                .carousel-caption
+                                    h1: a(href="#") Pedicure, $99 - reg: $129 Posh Nails
+                            .item
+                                img(src="images/hand-2-1.png")
+                                .carousel-caption
+                                    h1: a(href="#") Pedicure, $99 - reg: $129 Posh Nails

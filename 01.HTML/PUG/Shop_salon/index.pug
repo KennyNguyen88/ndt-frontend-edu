@@ -1,0 +1,121 @@
+extends pug/template/template_site
+block title
+    title Salon Home
+block content
+    #banner
+        img.banner-img(src="images/Banner.png")
+        .row.avatar
+            .col-xss-5.col-xs-3.col-sm-2
+                .avatar-img
+                    img(src="images/HandsSpaManicure.jpg")
+            .col-xs-6
+                h1 Posh Nails
+    #navbar
+        .navbar.navbar-default
+            .container-fluid
+                .navbar-header.text-right
+                    button.navbar-toggle.collapse(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+                        span.sr-only Toggle navigation
+                        i.fa.fa-bars(aria-hidden="true")
+                    a.navbar-toggle(href="#"): img(src="images/search.png")
+                    a.navbar-toggle(href="#"): img(src="images/cart.png")
+                #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                    ul.nav.navbar-nav.navbar-right
+                        li.active
+                            a(href="index.html") Home #[span.sr-only (current)]
+                        li: a(href="services.html") Services
+                        li: a(href="products.html") Products
+                        li: a(href="giftcard.html") Gift Card
+                        li: a(href="employee.html") Employee
+                        li: a(href="appointment.html") Appointment
+                        li: a(href="contact.html") Contact
+                        li
+                            a(href="#"): img.img-icon(src="images/cart.png")
+                    .account.hidden-md.hidden-lg
+                        .login
+                            img.header-icon(src="images/Login_icon.png")
+                            a.login-text(href="#") Log in
+                        .login
+                            img.header-icon(src="images/Signup_icon.png")
+                            a.login-text(href="#") Sign Up
+    #mobile-divided
+        .label-slide.hidden-xss-up
+            .row
+                .col-md-12
+                    #mobile-label-1.mobile-card
+                        table
+                            tr
+                                td#lbl-header-1.header
+                                    .card-header.text-center
+                                        h1 Promotion
+                                td
+                                    .label-card
+                                        img.card-bg(src="images/Asset-3.png")
+                                        .card-content
+                                            h1 REFER A FRIEND
+                                            p to receive
+                                            h1.percent 20% #[img.ml-1(src="images/OFF.png")]
+                    #mobilde-label-2.mobile-card
+                        table
+                            tr
+                                td#lbl-header-2.header
+                                    .card-header.text-center
+                                        h1.deal DEAL
+                                td
+                                    .label-card
+                                        img.card-bg(src="images/Asset-3.png")
+                                        .card-content
+                                            h2 3-Hour Full Body Pamper Package
+                                            p.big Only
+                                                h1.money #[small $] 99
+    #home-content
+        .row
+            .col-md-7
+                .row
+                    .col-xs-12
+                        h1.mt-0 Posh Nails
+                    .col-xss-10.col-xs-5
+                        p.address.ml-2 14D21 Conlan Circle Suite B-4 Charlotte, NC, 28277
+                        p.tel.ml-2 (+1)7045442008
+                        p.email.ml-2 Poshnailsandspa704@gmail.com
+                    .col-xs-7.hidden-xss-down
+                        .label-card.hidden-xss
+                            img.card-bg(src="images/Asset-3.png")
+                            img.pinin(src="images/pinin.png")
+                            .card-content
+                                h1 REFER A FRIEND
+                                p to receive
+                                h1.percent 20% #[img.ml-1(src="images/OFF.png")]
+                .row
+                    .col-xs-12
+                        h1 Working Time
+                    .col-xss-10.col-xs-5
+                        - var weeks = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+                        each val in weeks
+                            p.light
+                                | #{val}
+                                span
+                                    | 09:30
+                                    small AM
+                                    | -19:30
+                                    small PM
+                        p.light
+                            | Sunday
+                            span
+                                | 09:30
+                                small AM
+                                | -17:00
+                                small PM
+                    .col-xs-7.hidden-xss-down
+                        .label-card
+                            img.card-bg(src="images/Asset-3.png")
+                            img.pinin(src="images/pinin.png")
+                            .card-content
+                                h2 3-Hour Full Body Pamper Package
+                                p.big Only
+                                    h1.money
+                                        small $
+                                        | 99
+            .col-md-5.visible-md.visible-lg
+                .embed-responsive.embed-responsive-4by3
+                    iframe.embed-responsive-item(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25295.930156304785!2d16.371063311644324!3d48.208404844730474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d07986fcad78b%3A0x73f5a4d267cc4174!2zTmFnbGVyZ2Fzc2UgMTAsIDEwMTAgV2llbiwg0JDQstGB0YLRgNC40Y8!5e0!3m2!1sru!2sua!4v1453294615596" allowfullscreen)

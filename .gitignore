@@ -70,3 +70,7 @@ jspm_packages
 /01.HTML/PUG/Company_tera/**/*.html
 /01.HTML/PUG/Company_tera/fonts/
 /01.HTML/PUG/Company_tera/images/
+
+/01.HTML/PUG/Shop_salon/**/*.html
+/01.HTML/PUG/Shop_salon/fonts/
+/01.HTML/PUG/Shop_salon/images/
