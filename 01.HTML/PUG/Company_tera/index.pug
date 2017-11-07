@@ -584,5 +584,156 @@ block content
                             .row
                                 .col-12
                                     p: a(href="#") Bắt đầu ngay
+    section#tera-demo
+        .container
+            .row
+                .col
+                    h2.text-center Yeu cau demo cua ban
+            .row
+                .col-xl-8.mb-3.mb-xl-0.text-right-animate
+                    img.img-fluid(src="images/iPhone-6-Three-Quarters-View-Mockup.png")
+                .col-xl-4.demo-form.animate
+                    .row
+                        .col
+                            p Ten #[span(style="color:red") (*)] :
+                            input.form-control(type="text")
+                    .row
+                        .col
+                            p Email #[span(style="color:red") (*)] :
+                            input.form-control(type="text")
+                    .row
+                        .col
+                            p Quoc gia
+                            select.form-control
+                                option Viet Nam
+                    .row
+                        .col
+                            p So dien thoai
+                            .row
+                                .col-4.col-md-2.col-xl-4
+                                    select.form-control
+                                        option +84
+                                .col-8.col-md-10.col-xl-8
+                                    input.form-control(type="text")
+                    .row
+                        .col
+                            p Website / Facebook
+                            input.form-control(type="text")
+                    .row
+                        .col.text-center
+                            a.btn.btn-tera-bluebg(href="#") SUBMIT #[span.arrow_right.ml-2(aria-hidden="true")]
+    section#tera-chinhsach
+        .container
+            .row
+                .col-12
+                    h2.text-center Chinh sach uu dai danh cho dai ly
+            .row.justify-content-center
+                .col-12.col-md-4
+                    .cs-cover
+                        img.img-fluid(src="images/chinh_sach_01.png")
+                        .box
+                            .box-cnt
+                                p.title.text-center Lam chu viec kinh doanh cua ban
+                                p.text-center Chung toi se cung cap cho ban web dich vu cua Teraapp de ban chay tren domain rieng va ban tu quan ly website cua ban
+                .col-12.col-md-4
+                    .cs-cover
+                        img(src="images/chinh_sach_02.png")
+                        .box
+                            .box-cnt
+                                p.title.text-center Muc hoa hong cuc cao
+                                p.text-center Chung toi se danh cho ban muc hoa hong cuc khung, tuy theo so luong app ma ban ban duoc, tuy theo nang luc cua ban
+                .col-12.col-md-4
+                    .cs-cover
+                        img(src="images/chinh_sach_03.png")
+                        .box
+                            .box-cnt
+                                p.title.text-center Ho tro ky thuat tan tinh cho ban
+                                p.text-center Chung toi se ho tro ky thuat va nghiep vu cho ban, den khi ban tu tin nam vung va ap dung vao viec kinh doanh cua ban
+            .row
+                .col.text-center
+                    a.btn.btn-tera-bluebg.mt-5(href="#") TIM HIEU THEM #[span.arrow_right.ml-2(aria-hidden="true")]
+    section#tera-aboutus
+        .container
+            .row
+                .col-12
+                    h2.text-center Khach hang noi ve chung toi
+            .row
+                .col-12.col-md-6
+                    .box
+                        .row
+                            .col-8.m-auto.text-center.col-xl-3.alight-self-center
+                                img.img-fluid(src="images/avartar01.png")
+                            .col-12.col-xl-9
+                                p.title.text-center.text-xl-left Bao Ngan
+                                p.sub-title.text-center.text-xl-left Chu quan ga nuong o o o
+                                p Cam on TeraApp, khach hang rat thich ung dung di dong cua chung toi, chung toi nhan duoc rat nhieu luot dat ga nuong tu ung dung
+                .col-12.col-md-6
+                    .box
+                        .row
+                            .col-8.m-auto.text-center.col-xl-3.alight-self-center
+                                img.img-fluid(src="images/avartar02.png")
+                            .col-12.col-xl-9
+                                p.title.text-center.text-xl-left Hoang Minh
+                                p.sub-title.text-center.text-xl-left Giam doc chuoi cua hang rau sach
+                                p Toi rat hai long, TeraApp giup chung toi co duoc them nhieu don hang. Ngoai ra viec cap nhat noi dung, giao dien cho ung dung rat de dang
+            .row
+                .col-12.col-md-6
+                    .box
+                        .row
+                            .col-8.m-auto.text-center.col-xl-3.alight-self-center
+                                img.img-fluid(src="images/avartar03.png")
+                            .col-12.col-xl-9
+                                p.title.text-center.text-xl-left Quynh Tram
+                                p.sub-title.text-center.text-xl-left Chu quan ga nuong o o o
+                                p Cam on TeraApp, khach hang rat thich ung dung di dong cua chung toi, chung toi nhan duoc rat nhieu luot dat ga nuong tu ung dung
+                .col-12.col-md-6
+                    .box
+                        .row
+                            .col-8.m-auto.text-center.col-xl-3.alight-self-center
+                                img.img-fluid(src="images/avartar01.png")
+                            .col-12.col-xl-9
+                                p.title.text-center.text-xl-left Thuy Linh
+                                p.sub-title.text-center.text-xl-left Chu quan ga nuong o o o
+                                p Cam on TeraApp, khach hang rat thich ung dung di dong cua chung toi, chung toi nhan duoc rat nhieu luot dat ga nuong tu ung dung
+    section#tera-clients
+        .container
+            .row.logo-slider
+                .col-1.col-xl-1.align-self-center.nav-client-arrow
+                    a.customPrevBtn: img.img-fluid(src="images/arrow_left.png")
+                .col-10.col-xl-10
+                    #slider-clients.owl-carousel.owl-theme
+                        - var imgList = ["logo-sm.png", "ADC_logo_web.png", "logo-bn-ns.png" , "apple.png" , "logo talaha.ong" ,"adam_logo.png" ,"logo-sm.png", "ADC_logo_web.png", "logo-bn-ns.png"]
+                        each val in imgList
+                            .item: img(src="images/"+val)
+                .col-1.col-xl-1.align-self-center.text-right.nav-client-arrow
+                    a.customNextBtn: img.img-fluid(src="images/arrow_right.png")
+    section#tera-using
+        .container
+            .row.justify-content-start.text-center
+                .col-12.col-md-6.animate
+                    h2 Su dung thu dich vu ngay hom nay
+                    p Mien phi #[span 15] Ngay dung thu
+                    .row.using-reg
+                        .col-12
+                            p: a(href="#") Dang ky ngay #[span.arrow_right(aria-hidden="true")]
+                    h4
+                        span.icon_phone(aria-hidden="true")
+                        div(style="border-bottom: solid 1px white; display; inline-block") 0976009346
+                .col-12.col-md-6.animate
+                    img.img-fluid(src="images/PerspectiveAppScreensMock-Up.png")
+    section#tera-video
+        .row.text-center
+            .col-12
+                h2 Xem video thu vi duoi day de hieu ro hon ve TeraApp
+            .col-12
+                div
+                    iframe(width="900px" height="510px" src="https://player.vimeo.com/video/212547096" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+    #scrool-top
+        a.active(href="#")
+            span.arrow_up(aria-hidden="true")
+
+
+
+
 
 
