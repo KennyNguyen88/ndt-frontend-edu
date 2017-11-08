@@ -1,0 +1,322 @@
+section#modal
+    #teramodal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+        .modal-dialog.modal-lg
+            .modal-content
+                #modal_dang_ky.container
+                    .row.logo
+                        .col-12.col-sm-6.mb-3.col-md-6.text-left
+                            img.img-fluid(src="images/logo_blue.ong")
+                            button.close.hidden-sm-up.float-right(type="button" data-dismiss="modal" aria-label="Close")
+                                span(aria-hidden="true" style="font-size: 3rem") &times;
+                        .col-12.col-sm-6.mb-3.col-md-6
+                            .row
+                                .col-sm-10.text-center.col-xl-10.text-md-right
+                                .col-sm-2.hidden-xs-down
+                                    button.close(type="button" data-dismiss="modal" aria-label="Close")
+                                        span(aria-hidden="true" style="font-size: 3rem") &times;
+                    h2.text-center Dang ky thanh vien de so huu ung dung ngay !
+                    .row
+                        .col-xl-4.register-form
+                            .row
+                                .col
+                                    p Ten #[span(style="color: red") (*)]
+                                    .input-group
+                                        span.input-group-addon
+                                            span.icon_profile(aria-hidden="true")
+                                        input#reg_name.form-control(type="text")
+                            .row
+                                .col
+                                    .row
+                                        .col-xl-4
+                                            p Ma Quoc gia
+                                            select.form-control
+                                                option +84
+                                        .col-xl-8
+                                            p Dien thoai #[span(style="color: red") (*)]
+                                            .input-group
+                                                span.input-group-addon
+                                                    span.icon_phone(aria-hidden="true")
+                                                input.form-control(type="text")
+                            .row
+                                .col
+                                    p Email #[span(style="color: red") (*)]
+                                    .input-group
+                                        span.input-group-addon
+                                            span.icon_mail(aria-hidden="true")
+                                    input.form-control(type="text")
+                            .row
+                                .col
+                                    p Mat khau #[span(style="color: red") (*)]
+                                    .input-group
+                                        span.input-group-addon
+                                            span.icon_lock(aria-hidden="true")
+                                    input.form-control(type="password")
+                            .row
+                                .col
+                                    p Nhap Lai Mat khau #[span(style="color: red") (*)]
+                                    .input-group
+                                        span.input-group-addon
+                                            span.icon_lock(aria-hidden="true")
+                                    input.form-control(type="password")
+                            .row
+                                .col
+                                    input(type="checkbox")
+                                    | Toi dong y voi dieu khoan su dung
+                            .row
+                                .col
+                                    a#btn_chon_theme.btn.btn-tera-bluebg(href="#") Buoc tiep theo #[span.arrow_right.ml-2(aria-hidden="true")]
+                        .col-xl-8.text-right
+                            img.img-fluid(src="images/IsometricPerspectiveMock-Up.png")
+                #modal_chon_theme
+                    .container
+                        .row.logo
+                            .col-12.col-sm-6.mb-3.col-md-6.text-left
+                                img.img-fluid(src="images/logo_blue.png")
+                                button.close.hidden-sm-up.float-right(type="button" data-dismiss="modal" aria-label="Close")
+                                    span(style="font-size: 3rem" aria-hidden="true") &times;
+                            .col-12.col-sm-6.mb-3.col-md-6
+                                .row
+                                    .col-sm-10.text-center.col-xl-10.text-md-right
+                                        a.btn.btn-tera-bluebg(href="#") Tao App tu dau
+                                    .col-sm-2.hidden.xs-down
+                                        button.close(type="button" data-dismiss="modal" aria-label="Close")
+                                            span(aria-hidden="true" style="font-size: 3rem") &times;
+                        h3.text-center Chon Template Ung Dung !
+                        .row
+                            .col-xl-12
+                                .tabs.tabs_animate.mb-5
+                                    ul.horizontal.text-center
+                                        li
+                                            a(href="#tab-dulich")
+                                                i.sprite.sprite-dulich
+                                                p.hidden-md-down Du Lich #[i.icon_circle-empty.mr-auto.hidden-lg-down(aria-hidden="true")]
+                                        li
+                                            a(href="#tab-nhahang")
+                                                i.sprite.sprite-nhahang
+                                                p.hidden-md-down Nha hang #[i.icon_circle-empty.mr-auto.hidden-lg-down(aria-hidden="true")]
+                                        li
+                                            a(href="#tab-thoitrang")
+                                                i.sprite.sprite-thoitrang
+                                                p.hidden-md-down Thoi Trang #[i.icon_circle-empty.mr-auto.hidden-lg-down(aria-hidden="true")]
+                                        li
+                                            a(href="#tab-congty")
+                                                i.sprite.sprite-congty
+                                                p.hidden-md-down Cong Ty #[i.icon_circle-empty.mr-auto.hidden-lg-down(aria-hidden="true")]
+                                        li
+                                            a(href="#tab-lamdep")
+                                                i.sprite.sprite-lamdep
+                                                p.hidden-md-down Lam Dep #[i.icon_circle-empty.mr-auto.hidden-lg-down(aria-hidden="true")]
+                                        li
+                                            a(href="#tab-diengia")
+                                                i.sprite.sprite-diengia
+                                                p.hidden-md-down Dien Gia #[i.icon_circle-empty.mr-auto.hidden-lg-down(aria-hidden="true")]
+                                    #tab-dulich.fadeIn.animated
+                                        .row
+                                            .col-11.offset-2.col-xl-6.offset-xl-3
+                                                p Co
+                                                    span(style="color: red") 12
+                                                    | template trong theme du lich
+                                        .row
+                                            .col-1.align-self-center.p-0
+                                                a.slider-du-lich-prev
+                                                    span.arrow_carrot-left.ml-lg-2(aria-hidden="true")
+                                            .col-8.offset-1.offset-md-0.col-md-10.p-0
+                                                #slider-du-lich.owl-carousel.owl-theme
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_01.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_02.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_03.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_04.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_01.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_02.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                            .col-1.ml-2.ml-md-0.align-self-center.text-right.p-0
+                                                a.slider-du-lich-next
+                                                    span.arrow_carrot-right.mr-lg-2(aria-hidden="true")
+                                    #tab-nhahang
+                                        .row
+                                            .col-l1.offset-2.col-xl-6.offset-xl-3
+                                                p Co
+                                                    span(style="color: red") 12
+                                                    | template trong theme nha hang
+                                        .row
+                                            .col-1.align-self-center.p-0
+                                                a#slider-nha-hang-prev
+                                                    span.arrow_carrot-left.ml-2(aria-hidden="true")
+                                            .col-8.offset-1.offset-md-0.col-md-10.p-0
+                                                #slider-nha-hang.owl-carousel.owl-theme
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_01.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_02.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_03.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_04.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_01.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_02.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                            .col-1.ml-2.ml-md-0.align-self-center.text-right.p-0
+                                                a#slider-nha-hang-next
+                                                    span.arrow_carrot-right.ml-2(aria-hidden="true")
+                                    #tab-thoitrang
+                                        .row
+                                            .col-l1.offset-2.col-xl-6.offset-xl-3
+                                                p Co
+                                                    span(style="color: red") 12
+                                                    | template trong theme thoi trang
+                                        .row
+                                            .col-1.align-self-center.p-0
+                                                a#slider-thoi-trang-prev
+                                                    span.arrow_carrot-left.ml-2(aria-hidden="true")
+                                            .col-8.offset-1.offset-md-0.col-md-10.p-0
+                                                #slider-thoi-trang.owl-carousel.owl-theme
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_01.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_02.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_03.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_04.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_01.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_02.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                            .col-1.ml-2.ml-md-0.align-self-center.text-right.p-0
+                                                a#slider-thoi-trang-next
+                                                    span.arrow_carrot-right.ml-2(aria-hidden="true")
+                                    #tab-congty
+                                        .row
+                                            .col-l1.offset-2.col-xl-6.offset-xl-3
+                                                p Co
+                                                    span(style="color: red") 12
+                                                    | template trong theme cong ty
+                                        .row
+                                            .col-1.align-self-center.p-0
+                                                a#slider-cong-ty-prev
+                                                    span.arrow_carrot-left.ml-2(aria-hidden="true")
+                                            .col-8.offset-1.offset-md-0.col-md-10.p-0
+                                                #slider-cong-ty.owl-carousel.owl-theme
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_01.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_02.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_03.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_04.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_01.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_02.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                            .col-1.ml-2.ml-md-0.align-self-center.text-right.p-0
+                                                a#slider-cong-ty-next
+                                                    span.arrow_carrot-right.ml-2(aria-hidden="true")
+                                    #tab-lamdep
+                                        .row
+                                            .col-l1.offset-2.col-xl-6.offset-xl-3
+                                                p Co
+                                                    span(style="color: red") 12
+                                                    | template trong theme lam dep
+                                        .row
+                                            .col-1.align-self-center.p-0
+                                                a#slider-lam-dep-prev
+                                                    span.arrow_carrot-left.ml-2(aria-hidden="true")
+                                            .col-8.offset-1.offset-md-0.col-md-10.p-0
+                                                #slider-lam-dep.owl-carousel.owl-theme
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_01.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_02.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_03.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_04.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_01.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_02.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                            .col-1.ml-2.ml-md-0.align-self-center.text-right.p-0
+                                                a#slider-lam-dep-next
+                                                    span.arrow_carrot-right.ml-2(aria-hidden="true")
+                                    #tab-diengia
+                                        .row
+                                            .col-l1.offset-2.col-xl-6.offset-xl-3
+                                                p Co
+                                                    span(style="color: red") 12
+                                                    | template trong theme dien gia
+                                        .row
+                                            .col-1.align-self-center.p-0
+                                                a#slider-dien-gia-prev
+                                                    span.arrow_carrot-left.ml-2(aria-hidden="true")
+                                            .col-8.offset-1.offset-md-0.col-md-10.p-0
+                                                #slider-dien-gia.owl-carousel.owl-theme
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_01.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_02.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_03.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_04.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_01.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                                    .item
+                                                        a(href="#"): img.img-fluid(src="images/template_02.png")
+                                                        a.btn.btn-tera-outline(href="#") CHON MAU NAY
+                                            .col-1.ml-2.ml-md-0.align-self-center.text-right.p-0
+                                                a#slider-dien-gia-next
+                                                    span.arrow_carrot-right.ml-2(aria-hidden="true")
+    #videoModal.modal.fade(tabindex="1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true")
+        .modal-dialog(role="document")
+            .modal-content
+                .modal-header.justify-content-end
+                .modal-body
+                    .container
+                        .row.justify-content-center.text-center
+                            .col-12.col-md-10.col-lg-7.col-xl-9
+                                .video-wrapper(style="position: relative; display: inline-block")
+                                    iframe#vimeo-top-player(width="900px" height="510px" src="https://player.vimeo.com/video/212547096" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+                                    button#vimeo-close.close(type="button" data-dismiss="modal" aria-label="Close")
+                                        soan(aria-hidden="true" style="font-size: 2rem") &times;

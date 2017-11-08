@@ -1,0 +1,12 @@
+section#tera-clients
+    .container
+        .row.logo-slider
+            .col-1.col-xl-1.align-self-center.nav-client-arrow
+                a.customPrevBtn: img.img-fluid(src="images/arrow_left.png")
+            .col-10.col-xl-10
+                #slider-clients.owl-carousel.owl-theme
+                    - var imgList = ["logo-sm.png", "ADC_logo_web.png", "logo-bn-ns.png" , "angle.png" , "logo talaha.png" ,"adam_logo.png" ,"logo-sm.png", "ADC_logo_web.png", "logo-bn-ns.png"]
+                    each val in imgList
+                        .item: img(src="images/"+val)
+            .col-1.col-xl-1.align-self-center.text-right.nav-client-arrow
+                a.customNextBtn: img.img-fluid(src="images/arrow_right.png")
