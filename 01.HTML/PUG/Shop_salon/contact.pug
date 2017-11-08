@@ -2,42 +2,4 @@ extends pug/template/template_site
 block title
     title Salon Contact
 block content
-    #contact-content
-        .row
-            .col-md-4.mb-2
-                .row
-                    .col-xs-12
-                        h1.mt-0 Posh Nails
-                        p.address.ml-2 14D21 Conlan Circle Suite B-4 Charlotte, NC, 28277
-                        p.tel.ml-2 (+1)7045442008
-                        p.email.ml-2 Poshnailsandspa704@gmail.com
-                .row
-                    .col-xs-12
-                        h1 Working Time
-                        +mixWorkingTime
-            .col-md-8
-                .price-layout
-                    h2 Tell us a little about yourself, and we'll be in touch right away.
-                    form
-                        .form-group
-                            .row
-                                .col-xs-12.col-md-6.mb-1
-                                    input.form-control(type="text" placeholder="Your name")
-                                .col-xs-12.col-md-6.mb-1
-                                    input.form-control(type="text" placeholder="Phone number")
-                            .row
-                                .col-xs-12.col-md-6.mb-1
-                                    select.form-control
-                                        option United States of America
-                                        option United States of America
-                                .col-xs-12.col-md-6.mb-1
-                                    input.form-control(type="text" placeholder="Email address")
-                            .row
-                                .col-xs-12.mb-1
-                                    textarea.form-control(placeholder="Address" cols="30" rows="2")
-                            .row
-                                .col-xs-12.mb-1
-                                    textarea.form-control(placeholder="Address" cols="30" rows="6")
-                            .row
-                                .col-xs-12.text-center.mb-0
-                                    .btn.btn-primary Contact me
+    include pug/layout/contact
