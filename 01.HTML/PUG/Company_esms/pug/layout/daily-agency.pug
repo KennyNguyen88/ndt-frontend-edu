@@ -1,0 +1,25 @@
+section#sms-agency
+    .container
+        .row
+            .col.text-center
+                h1 Cac don vi phu hop de tro thanh dai ly hoac CTV cua #[span(style="text-transform: none") e] SMS
+                p Doanh nghiep hoac ca nhan lam viec trong cac nganh sau day phu hop de tro thanh dai ly, CTV cua eSMS
+        .col.carousel_container
+            #myCarousel.carousel.slide.mx-auto(data-ride="carousel")
+                ol.carousel-indicators
+                    li.active(data-target="#myCarousel" data-slide-to="0")
+                    li(data-target="#myCarousel" data-slide-to="1")
+                    li(data-target="#myCarousel" data-slide-to="2")
+                .carousel-inner(role="listbox")
+                    .carousel-item.active
+                        .col-12.col-md-4
+                            a(href="#"): img.img-fluid(src="images/vienthong.png")
+                            .carousel-caption.d-md-block.text-left: p Vien Thong
+                    .carousel-item
+                        .col-12.col-md-4
+                            a(href="#"): img.img-fluid(src="images/cntt.png")
+                            .carousel-caption.d-md-block.text-left: p Cong Nghe Thong Tin
+                    .carousel-item
+                        .col-12.col-md-4
+                            a(href="#"): img.img-fluid(src="images/ss-digital-marketing.png")
+                            .carousel-caption.d-md-block.text-left: p Marketing

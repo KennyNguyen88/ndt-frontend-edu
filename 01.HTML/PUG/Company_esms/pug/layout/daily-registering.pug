@@ -1,0 +1,29 @@
+section#sms-registering
+    img.img-bg(src="images/apple-bg-1.png")
+    .container.registering-box
+        .row
+            .col.text-center
+                h1 Dang ky thanh vien ngay bay gio
+        .row
+            .col-12.col-md-6
+                .reg-content
+                    h2 eSMS.vn
+                    p ESMS la chuong trinh duoc ra doi voi mong muon giup cac cua hang, doanh nghiep thuc hien cac chuong trinh quang cao, tiep thi mot cach hieu qua nhat, tiet kiem thoi gian nhat va dac biet de dang nhat.
+                    p Address: 231 Chu Van An, Phuong 26, Binh Thanh, HCM
+                    p Phone: 090 3838 700
+                    p Email: linhtt@vihat.vn
+            .col-12.col-md-6
+                .reg-form
+                    form(action="")
+                        input#name(type="text" name="name" placeholder="Ten*")
+                        input#email(type="text" name="email" placeholder="Email*")
+                        input#tel(type="text" name="tel" placeholder="Dien Thoai")
+                        input#fields(type="text" name="fields" placeholder="Linh Vuc")
+                        .rdo_grp
+                            input#rdo_fields1(type="radio" name="rdo_fields" checked)
+                            label(for="rdo_fields1") #[span] Dai ly
+                            input#rdo_fields2(type="radio" name="rdo_fields")
+                            label(for="rdo_fields2") #[span] Thanh Vien
+                        textarea#remark(name="remark" rows="3" placeholder="Ghi chu")
+                        a(href="#")
+                            p.btn-send Send message
