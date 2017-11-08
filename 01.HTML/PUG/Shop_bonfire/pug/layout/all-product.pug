@@ -1,0 +1,32 @@
+#all-product
+    h3
+        span All Products
+        a.list List #[span &nbsp;]
+        a.grid Grid #[span &nbsp;]
+    ul.clearfix.grid-view
+        -
+            var i = 2
+        while (i < 8)
+            case i
+                when 4
+                when 7
+                    li.product.last
+                        a.thumb(href="#")
+                            img(src="images/products/product-"+i+".jpg")
+                        .data
+                            a.title(href="#") Lorem ipsum
+                            p Aliquam dignissim porttitor tortor non fermentum. Curabitur in magna lectus. Duis sed eros diam. Lorem ipsum dolor sit amet, consectetur. Aliquam dignissim porttitor tortor non fermentum. Curabitur in magna lectus. Duis sed eros diam. Lorem ipsum dolor sit amet, consectetur. Curabitur in magna lectus. Duis sed eros diam. Lorem ipsum dolor sit amet, consectetur.
+                            .clearfix.info
+                                a.add-to-cart(href="#") ADD TO CART
+                                span.price-text $ #[span 70]
+                default
+                    li.product
+                        a.thumb(href="#")
+                            img(src="images/products/product-"+i+".jpg")
+                        .data
+                            a.title(href="#") Lorem ipsum
+                            p Aliquam dignissim porttitor tortor non fermentum. Curabitur in magna lectus. Duis sed eros diam. Lorem ipsum dolor sit amet, consectetur. Aliquam dignissim porttitor tortor non fermentum. Curabitur in magna lectus. Duis sed eros diam. Lorem ipsum dolor sit amet, consectetur. Curabitur in magna lectus. Duis sed eros diam. Lorem ipsum dolor sit amet, consectetur.
+                            .clearfix.info
+                                a.add-to-cart(href="#") ADD TO CART
+                                span.price-text $ #[span 70]
+            - i = i + 1

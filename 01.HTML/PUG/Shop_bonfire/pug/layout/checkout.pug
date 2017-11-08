@@ -1,0 +1,100 @@
+#checkout
+    h3: span CHECKOUT
+    h4
+        | Step 1: Checkout Options
+        a(href="#") Modify
+    .pane: p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+    h4 Step 2: Billing Details
+    .pane.current
+        form(method="post" action="#")
+            .top.clearfix
+                .left-side
+                    fieldset
+                        legend Your Personal Details
+                        p
+                            label(for="f-name")
+                                span *
+                                | First Name:
+                            input#f-name.text(type="text")
+                        p
+                            label(for="l-name")
+                                span *
+                                | Last Name:
+                            input#l-name.text(type="text")
+                        p
+                            label(for="mail")
+                                span *
+                                | Email Address:
+                            input#mail.text(type="text")
+                        p
+                            label(for="tel")
+                                span *
+                                | Telephone:
+                            input#tel.text(type="text")
+                        p
+                            label(for="fax") Fax:
+                            input#fax.text(type="text")
+                .right-side
+                    fieldset
+                        legend Your Address
+                        p
+                            label(for="comp") Company
+                            input#comp.text(type="text")
+                        p
+                            label(for="add1")
+                                span *
+                                | Address 1:
+                            input#add1.text(type="text")
+                        p
+                            label(for="add2") Address 2:
+                            input#add2.text(type="text")
+                        p
+                            label(for="city")
+                                span *
+                                | City:
+                            input#city.text(type="text")
+                        p
+                            label(for="p-code")
+                                span *
+                                    | Post Code:
+                            input#p-code.text(type="text")
+                        p.checkout-selectbox
+                            label(for="country")
+                                span *
+                                    | Country:
+                            -
+                                var countries = {
+                                "usa" : "United States Ameria",
+                                "pk" : "Pakistan",
+                                "in" : "Indian",
+                                "sa" : "Saudi Arabia",
+                                "uae" : "United Arab Emirates",
+                                "my" : "Malaysia",
+                                "sg" : "Singapore",
+                                "fr" : "France"
+                                };
+                            select#country
+                                option(value="uk" selected="selected") United Kingdom
+                                each val,index in countries
+                                    option(value="index")=val
+                        p.checkout-selectbox
+                            label(for="state")
+                                span *
+                                    | Region/State:
+                            select#state
+                                option(value="" selected="selected") ------- Please Select -------
+                                each val,index in countries
+                                    option(value="index")=val
+            .bottom.clearfix
+                p
+                    input#address-same.checkbox(type="checkbox")
+                    label(for="address-same") My delivery and billing addresses are the same.
+                input#submit(type="submit" value="Continue")
+    h4 Step 3: Delivery Details
+    .pane: p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+    h4 Step 4: Delivery Method
+    .pane: p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+    h4 Step 5: Payment Method
+    .pane: p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+    h4 Step 6: Confirm Order
+    .pane: p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.

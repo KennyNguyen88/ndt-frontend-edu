@@ -1,53 +1,12 @@
-extends pug/template
+extends pug/template/template
 include pug/utility/mixins
 append styles
     link(rel="stylesheet" type="text/css" media="all" href="css/style.css")
 append content
     - var breadcrumbs = ["Home","Contact"]
-    p#breadcrumbs
-        +mixBreadcrumb(breadcrumbs)
+    include pug/component/breadcrumb
     .inner-container.clearfix
-        #contact
-            h3.main-heading
-                span Contact
-            h4.sub-heading Address
-            .address
-                em John Doe
-                p Loreum ipsum, Layout 1, Some street 123-4, Melbourne VIC 3000, Australia
-                em Telephone:
-                p +61 (0) 3 9023 0074
-                em Fax:
-                p +61 (0) 3 9023 0074
-                #map_canvas
-                    script(type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=&amp;sensor=false")
-                    script(type="text/javascript").
-                        function initialize() {
-                            var myOptions = {
-                                center: new google.maps.LatLng(48.87366, 2.29507),
-                                zoom: 14,
-                                mapTypeId: google.maps.MapTypeId.ROADMAP
-                            };
-                            var map = new google.maps.Map(document.getElementById("map_canvas"),
-                            myOptions);
-                        }
-                        initialize();
-            .comments
-                form#contact-form.comment-form(method="post" action="")
-                    h3 Leave Us A Message
-                    div
-                        fieldset.clearfix
-                            label(for="name") Name:
-                            input#name.required(name="name" type="text")
-                        fieldset.clearfix
-                            label(for="email") Email:
-                            input#email.required.email(name="email" type="text")
-                        fieldset.clearfix
-                            label(for="message") Message:
-                            textarea#message.required(name="message" cols="5" rows="5")
-                        fieldset.submit-button.clearfix
-                            input.submit(name="submit" type="submit" value="Submit")
-                        img#loader(src="images/loader.gif")
-                        p#result
+        include pug/layout/contact
         #sidebar
             - var categories = ["Bags","Shoes","Lorems","Ipsums","Dresses","Jewellery","Furniture"]
             div

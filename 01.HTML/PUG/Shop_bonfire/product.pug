@@ -1,11 +1,10 @@
-extends pug/template
+extends pug/template/template
 include pug/utility/mixins
 append styles
     link(rel="stylesheet" type="text/css" media="all" href="css/style.css")
 append content
     - var breadcrumbs = ["Home","Products","Sample Product"]
-    p#breadcrumbs
-        +mixBreadcrumb(breadcrumbs)
+    include pug/component/breadcrumb
     .inner-container.clearfix
         include pug/layout/product
         #sidebar
