@@ -1,0 +1,36 @@
+extends pug/template/template_site
+block title
+    title Salon Employee
+block content
+    #employee-content
+        .row
+            .col-xs-12.col-md-5.mb-2.col-left
+                h1 Employee name
+                .row
+                    .col-xs-12.mb-2
+                        .input-group.input-group-lg
+                            input.form-control(type="text" placeholder="Username" aria-describedby="sizing-addon1")
+                            span#sizing-addon1.input-group-btn
+                                button.btn.btn-default
+                                    img(src="images/search-black@0.5x.png")
+                .row
+                    .col-xs-12
+                        .cover
+                            - var i = 1;
+                            while i < 5
+                                - i = i+1;
+                                .row
+                                    .col-xs-12 Nguyen Van A
+                                .row
+                                    .col-xs-12 Tran Van B
+            .col-xs-12.col-md-7.col-right
+                .row
+                    .col-xs-8.col-xs-offset-2.col-md-3.col-md-offset-0
+                        img.img-responsive(src="images/user.png")
+                    .col-xs-12.col-md-8
+                        .col-xs-12.mb-5.visible-md &nbsp;
+                        h1.name.text-center Nguyen Van A
+                .row
+                    .col-xs-12.col-md-6.col-md-offset-3
+                        h1 Working Time
+                        +mixWorkingTime

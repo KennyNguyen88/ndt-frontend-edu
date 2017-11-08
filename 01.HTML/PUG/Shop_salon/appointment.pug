@@ -1,0 +1,99 @@
+extends pug/template/template_site
+block title
+    title Salon Appointment
+block content
+    #appointment-content
+        .row
+            .col-md-4.mb-2.calendar
+                p.title Choose Employee
+                .row
+                    .col-xs-12.mb-1
+                        select.form-control.text-center
+                            option First, last name
+                .row
+                    .col-xs-12
+                        ul.nav.nav-tabs(role="tablist")
+                            li.active(role="presentation"): a(href="#date" aria-controls="date" role="tab" data-toggle="tab") Date
+                            li(role="presentation"): a(href="#time" aria-controls="time" role="tab" data-toggle="tab") Time
+                .row
+                    .col-xs-12
+                        .tab-content
+                            #date.tab-pane.active(role="tabpanel")
+                                #calendar.calendar
+                            #time.tab-pane(role="tabpanel")
+                                #timeLayer.timelayer
+                .row
+                    .col-xs-12
+                        .btn-group(data-toggle="buttons")
+                            label.btn.active
+                                input(type="radio" name="optionsRadios1" value="option1" checked)
+                                i.fa.fa-circle-thin
+                                i.fa.fa-check-circle
+                                span Individual
+                            label.btn
+                                input(type="radio" name="optionsRadios1" value="options2")
+                                i.fa.fa-circle-thin
+                                i.fa.fa-check-circle
+                                span Group
+                            .input-group.spinner
+                                input.form-control(type="text" value="42")
+                                button.btn.btn-default(style="right -2px; height: 34px" type="button")
+                                    i.fa.fa-chevron-right
+                                button.btn.btn-default(style="left -2px; height: 34px" type="button")
+                                    i.fa.fa-chevron-left
+            .col-md-4.mb-2.choose
+                p.title Choose Services
+                .row
+                    .col-xs-12.mb-1
+                        select.form-control
+                        option(selected disabled) Add service
+                .row
+                    .col-xs-12
+                        .btn-group.btn-group-vertical(data-toogle="buttons")
+                            label.btn.active
+                                input(type="radio" name="optionRadios" value="option1" checked)
+                                i.fa.fa-circle-thin
+                                i.fa.fa-check-circle
+                                span Book Appointment as Walkin
+                            label.btn
+                                input(type="radio" name="optionRadios" value="option2")
+                                i.fa.fa-circle-thin
+                                i.fa.fa-check-circle
+                                span Recorded information to better serve
+                .row
+                    .col-xs-12
+                        input.form-control.mb-1(type="text" placeholder="Your name")
+                        input.form-control.mb-1(type="text" placeholder="Phone number")
+                        input.form-control.mb-1(type="text" placeholder="Email Address")
+                        textarea.form-control.mb-1(rows="3" placeholder="Address")
+                        textarea.form-control(rows="6" placeholder="Comment")
+            .col-md-4.mb-2.info
+                .row.mb-1
+                    .col-xs-12.bg
+                        p.title.white Appointment Information
+                .row
+                    .col-xs-12
+                        .row.mb-1
+                            .col-xs-12
+                                p.title Date / Time
+                                p.content Monday. 05/29/2017. 09:00 AM
+                        .row.mb-1
+                            .col-xs-12
+                                p.title Employee
+                                p.content Nguyen Van A
+                        .row.mb-1
+                            .col-xs-12
+                                p.title Service
+                                .price-table
+                                    .row
+                                        .col-xs-8 Classic Manicure (20 min)
+                                        .col-xs-4.text-right $15.00
+                                    .row
+                                        .col-xs-8 Men's sport pedicure (20 min)
+                                        .col-xs-4.text-right $20.00
+                                    .row
+                                        .col-xs-8 Spa
+                                        .col-xs-4.text-right $40.00
+                        .row.mb-1
+                            .col-xs-12
+                                p.title Total #[span $75.00]

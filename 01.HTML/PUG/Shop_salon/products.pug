@@ -1,0 +1,59 @@
+extends pug/template/template_site
+block title
+    title Salon Contact
+block content
+    #services-content
+        .row
+            .col-xs-12.col-md-5
+                .embed-responsive.embed-responsive-4by6
+                    .embed-responsive-item
+                        -
+                            var pathImg = "images/";
+                            var products = [
+                                {
+                                    "img" : "heart.jpg",
+                                    "caption" : "Manicure"
+                                },
+                                {
+                                    "img" : "foot.jpg",
+                                    "caption" : "Pedicure"
+                                },
+                                {
+                                    "img" : "nail.jpg",
+                                    "caption" : "Acrylic"
+                                },
+                                {
+                                "img" : "hand-nail.jpg",
+                                "caption" : "Gel"
+                                },
+                                {
+                                "img" : "waxing.jpg",
+                                "caption" : "Waxing"
+                                },
+                                {
+                                "img" : "ongle1.jpg",
+                                "caption" : "All"
+                                }
+
+                            ]
+                        each val in products
+                            .col-xss-12.col-xs-6
+                                .img-layout.mb-3
+                                    img(src=pathImg+val["img"])
+                                    p.caption=val["caption"]
+            .col-xss-12.col-md-7
+                .price-layout
+                    h2.mt-0 Manicure
+                    .embed-responsive.embed-responsive-4by3
+                        .embed-responsive-item
+                            .price-content
+                                - var prices = ["15.00","20.00","30.00","40.00"]
+                                table
+                                    each val,index in prices
+                                        tr
+                                            td.name
+                                                span Product #{index}
+                                            td.price
+                                                span $#{val}
+
+

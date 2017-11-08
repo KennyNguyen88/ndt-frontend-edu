@@ -1,0 +1,64 @@
+extends pug/template/template_site
+block title
+    title Salon Giftcard
+block content
+    #giftcard-content
+        .row
+            .col-xss-12.col-xs-10.col-md-5.mt-4.col-xss-offset-0.col-xs-offset-1.col-md-offset-0
+                .gift-card-cover
+                    img(src="images/gift-card.png")
+                .gift-card-content
+                    .gift-card-header.clearfix
+                        .colp s-5
+                            h1 Posh Nail
+                            p (+1) 704 544 2008
+                        .col-xs-7.text-right
+                            p 14021 Conlan Circle Suite B-4
+                            p Charlotte, NC, 28277
+                            p Poshnailsandpa@gmail.com
+                    .gift-card-body
+                        .body-cover
+                            h1 Gift Card
+                            p.one-line To:&nbsp&nbsp&nbsp
+                                span#to ...................................................................................................................................................................................
+                            p.one-line From:&nbsp&nbsp&nbsp
+                                span#from ............................................................................................................................................................
+                            .mess-cover
+                                p.multi-line Message:&nbsp&nbsp&nbsp
+                                p#message.mess-cnt ........................................................................................................................................................................................................................................................................................
+                            h1#total.amount $000
+            .col-xss-12.col-xs-12.col-md-7.mt-4
+                h1.form-title Personal your gift card
+                form
+                    .row
+                        .col-xss-3.col-xs-2
+                            p To
+                        .col-xss-9.col-xs-10
+                            input#inpTo(name="inpTo" type="text")
+                        .col-xss-3.col-xs-2
+                            p From
+                        .col-xss-9.col-xs-10
+                            input#inpFrom(name="inpFrom" type="text")
+                        .col-xss-3.col-xs-2
+                            p Message
+                        .col-xss-9.col-xs-10
+                            textarea#txtMessage(name="txtMessage" rows="4" type="text")
+                        .col-xss-3.col-xs-2
+                            p Amount
+                        .col-xss-4.col-xs-5(style="padding-right: 0")
+                            select#price(name="price")
+                                option(value="0" selected disabled) Select amout
+                                option(value="10") 10.00$
+                                option(value="20") 20.00$
+                                option(value="30") 30.00$
+                                option(value="40") 40.00$
+                                option(value="50") 50.00$
+                        .col-xss-5.col-xs-5
+                            input#amount(name="amount" type="number" placeholder="Enter quantity")
+                    .row.mt-3
+                        .col-xss-3.col-xs-2
+                        .col-xss-9.col-xs-10.text-center
+                            .col-xss-12.col-xs-6
+                                a.btn-add.btn-block(href="#") Add to Card
+                            .col-xss-12.col-xs-6
+                                a.btn-add.btn-block(href="#") Check Out

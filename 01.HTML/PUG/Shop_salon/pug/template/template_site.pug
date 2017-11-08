@@ -1,4 +1,5 @@
 doctype html
+include ../utility/mixins
 head
     block title
         title Salon Landing Page
@@ -11,6 +12,8 @@ head
 body
     .container
         include ../layout/header
+        include ../layout/banner
+        include ../layout/navbar
         block content
     block scripts
         script(src="js/lib/jquery.min.js")

@@ -1,0 +1,28 @@
+#navbar
+    .navbar.navbar-default
+        .container-fluid
+            .navbar-header.text-right
+                button.navbar-toggle.collapse(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+                    span.sr-only Toggle navigation
+                    i.fa.fa-bars(aria-hidden="true")
+                a.navbar-toggle(href="#"): img(src="images/search.png")
+                a.navbar-toggle(href="#"): img(src="images/cart.png")
+            #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                ul.nav.navbar-nav.navbar-right
+                    li.active
+                        a(href="index.html") Home #[span.sr-only (current)]
+                    li: a(href="services.html") Services
+                    li: a(href="products.html") Products
+                    li: a(href="giftcard.html") Gift Card
+                    li: a(href="employee.html") Employee
+                    li: a(href="appointment.html") Appointment
+                    li: a(href="contact.html") Contact
+                    li
+                        a(href="#"): img.img-icon(src="images/cart.png")
+                .account.hidden-md.hidden-lg
+                    .login
+                        img.header-icon(src="images/Login_icon.png")
+                        a.login-text(href="#") Log in
+                    .login
+                        img.header-icon(src="images/Signup_icon.png")
+                        a.login-text(href="#") Sign Up

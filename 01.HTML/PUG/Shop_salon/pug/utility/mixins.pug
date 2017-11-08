@@ -1,0 +1,17 @@
+mixin mixWorkingTime
+    - var weeks = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    each val in weeks
+        p.light
+            | #{val}
+            span
+                | 09:30
+                small AM
+                | -19:30
+                small PM
+    p.light
+        | Sunday
+        span
+            | 09:30
+            small AM
+            | -17:00
+            small PM
