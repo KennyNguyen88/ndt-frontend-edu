@@ -1,0 +1,65 @@
+include list
+doctype html
+html(lang="en")
+    head
+        title CSS flexbox playground
+        link(rel="stylesheet" href="styles.css")
+    body
+        .container.flexdirection
+            h1 Flex direction
+            h3 row (default)
+            +mixList("direction row",5)
+            h3 row-reverse
+            +mixList("direction rowreverse",5)
+            h3 column
+            +mixList("direction column",3)
+            h3 column-reverse
+            +mixList("direction columnreverse",3)
+        .container.flexwrap
+            h1 Flex wrap
+            h3 nowrap (default)
+            +mixList("wrap nowrap",5)
+            h3 wrap
+            +mixList("wrap wrap1",5)
+            h3 wrap-reverse
+            +mixList("wrap wrapreverse",5)
+        .container.justifycontent
+            h1 Justify Content - main axis
+            h3 flex-start (default)
+            +mixList("justify flexstart",3)
+            h3 flex-end
+            +mixList("justify flexend",3)
+            h3 center
+            +mixList("justify center",3)
+            h3 space-between
+            +mixList("justify spacebetween",3)
+            h3 space-around
+            +mixList("justify spacearound",3)
+            h3 space-evenly
+            +mixList("justify spaceevenly",3)
+        .container.alignitem
+            h1 Align Items - cross axis
+            h3 flex-start
+            +mixList("alignitem flexstart",5)
+            h3 flex-end
+            +mixList("alignitem flexend",5)
+            h3 center
+            +mixList("alignitem center",5)
+            h3 baseline
+            +mixList("alignitem baseline",5)
+            h3 stretch (default)
+            +mixList("alignitem stretch",5)
+        .container.aligncontent
+            h1 Align Content - flex line - no effect if only one line
+            h3 flex-start
+            +mixList("aligncontent flexstart",5)
+            h3 flex-end
+            +mixList("aligncontent flexend",5)
+            h3 center
+            +mixList("aligncontent center",5)
+            h3 space-between
+            +mixList("aligncontent spacebetween",5)
+            h3 space-around
+            +mixList("aligncontent spacearound",5)
+            h3 stretch
+            +mixList("aligncontent stretch",5)
