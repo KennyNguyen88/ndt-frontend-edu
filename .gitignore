@@ -50,27 +50,25 @@ jspm_packages
 
 .idea/
 #01.HTML
+/01.HTML/PUG/**/*.html
 
 /01.HTML/PUG/Portfolio_2075DigitalTeam/fonts/
 /01.HTML/PUG/Portfolio_2075DigitalTeam/images/
-/01.HTML/PUG/Portfolio_2075DigitalTeam/**/*.html
 
-/01.HTML/PUG/Portfolio_adventure/**/*.html
 /01.HTML/PUG/Portfolio_adventure/fonts/
 /01.HTML/PUG/Portfolio_adventure/images/
 
-/01.HTML/PUG/Shop_bonfire/**/*.html
 /01.HTML/PUG/Shop_bonfire/fonts/
 /01.HTML/PUG/Shop_bonfire/images/
 
-/01.HTML/PUG/Company_esms/**/*.html
 /01.HTML/PUG/Company_esms/fonts/
 /01.HTML/PUG/Company_esms/images/
 
-/01.HTML/PUG/Company_tera/**/*.html
 /01.HTML/PUG/Company_tera/fonts/
 /01.HTML/PUG/Company_tera/images/
 
-/01.HTML/PUG/Shop_salon/**/*.html
 /01.HTML/PUG/Shop_salon/fonts/
 /01.HTML/PUG/Shop_salon/images/
+
+/02.CSS/**/*.html
+
