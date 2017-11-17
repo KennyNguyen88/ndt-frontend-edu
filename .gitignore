@@ -71,4 +71,8 @@ jspm_packages
 /01.HTML/PUG/Shop_salon/images/
 
 /02.CSS/**/*.html
+/02.CSS/**/*.css
+/02.CSS/**/*.map
 
+/03.WORKFLOW\WEBPACK_PUG_SASS_ES6/dist/
+/03.WORKFLOW\WEBPACK_PUG_SASS_ES6/node_modules/

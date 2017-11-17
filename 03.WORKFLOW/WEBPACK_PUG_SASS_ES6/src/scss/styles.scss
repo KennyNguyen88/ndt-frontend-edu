@@ -1,0 +1,9 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "base/manifest";
+@import "component/manifest";
+@import "layout/manifest";
+@import "utility/manifest";
+
+body {
+  color: #ccc;
+}
