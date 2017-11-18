@@ -2,7 +2,7 @@ const path = require("path");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
-
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
     entry: {
         app: './src/app.js'
@@ -72,6 +72,8 @@ module.exports = {
             jQuery: 'jquery',
             'window.jQuery': 'jquery',
             Popper: ['popper.js', 'default']
-        })
+        }),
+        //Cleaning dist
+        new CleanWebpackPlugin(['dist'])
     ]
 };
