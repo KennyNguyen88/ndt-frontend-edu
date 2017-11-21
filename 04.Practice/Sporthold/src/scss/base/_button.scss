@@ -1,0 +1,28 @@
+%button{
+  padding: .75rem 2rem;
+  text-transform: uppercase;
+  font-weight: $font-weight--bold;
+  text-decoration: none;
+  transition: background .5s;
+}
+
+.button--primary{
+  background-color: $button__primary--bg;
+  color: $button;
+  @extend %button;
+  &:hover{
+    text-decoration: none;
+    color: $button;
+    background-color: $color-extract-03;
+  }
+}
+.btn-blue{
+  background-color: $color-extract-08;
+  color: #000000;
+  @extend %button;
+  &:hover{
+    text-decoration: none;
+    color: #000000;
+    background-color: darken($color-extract-08,20%);
+  }
+}

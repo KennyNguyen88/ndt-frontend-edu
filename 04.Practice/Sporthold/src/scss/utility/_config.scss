@@ -1,0 +1,50 @@
+//Font Stacks
+$font-lato--google: 'https://fonts.googleapis.com/css?family=Lato:300,400,500';
+$font-roboto--google: 'https://fonts.googleapis.com/css?family=Lato:300,400,500';
+$font-family--primary: 'Lato', sans-serif;
+$font-family--secondary: 'Roboto', sans-serif;
+//Font weights
+$font-weight--thin: 100;
+$font-weight--light: 300;
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+$font-weight--ultra-bold: 900;
+//Text
+$base__font-size: 16px;
+$base__line : 24px;
+//Color Pallet
+$color-extract-01: #FFFFFF;
+$color-extract-02: #472424;
+$color-extract-03: #623232;
+$color-extract-04: #ff7373;
+$color-extract-05: #dcc5b8;
+$color-extract-06: #f0efee;
+$color-extract-07: #8a8784;
+$color-extract-08: #4bd8cd;
+$color-extract-09: #000000;
+//Color Usage
+$navigation-bar-top--bg: $color-extract-02;
+$navigation-bar-top__link: $color-extract-01;
+$navigation-bar-top__link--bghover: $color-extract-04;
+$navigation-bar-top__cart: $color-extract-01;
+$navigation-bar-top__cart-item: $color-extract-05;
+
+$navigation-bar-bottom--bg: $color-extract-03;
+$navigation-bar-bottom__link: $color-extract-01;
+$navigation-bar-bottom__link--hover: $color-extract-04;
+
+$banner--bg: $color-extract-06;
+$banner__price: $color-extract-02;
+$banner__title: $color-extract-02;
+$banner__sub-title: $color-extract-04;
+$banner__desc: $color-extract-07;
+
+$button: $color-extract-01;
+$button__primary--bg: $color-extract-04;
+$button__secondary--bg: $color-extract-02;
+
+
+
+
+
+
