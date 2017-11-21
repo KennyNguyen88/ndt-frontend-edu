@@ -1,0 +1,736 @@
+extends template/site
+block title
+    title PSSV Introduction
+block main
+    .reveal
+        .slides
+            section
+                img.w40(src=require("../images/Picture1.jpg"))
+                img.w40(src=require("../images/Picture2.jpg"))
+                p(style="margin: 0")
+                    img.img-no-border(src=require("../images/logo.gif"))
+                img.w25.img-no-border(src=require("../images/Picture3.jpg"))
+                img.w25.img-no-border(src=require("../images/Picture4.jpg"))
+                img.w25.img-no-border(src=require("../images/Picture5.jpg"))
+            section(data-background-image="../images/brushsteel2.jpg")
+                h1 Table of contents
+                ol
+                    li About POSCO
+                    li Company Overview
+                    li Material Flow & Capacity
+                    li Manufacturing Process
+                    li Product Specifications
+                    li Quality Certification
+                    li Quality Comparison of Rebar
+                    li Radiation Measurement
+            section
+                section.text-white.blur-background1
+                    h1.text-white 1. About POSCO
+                    p
+                        | Established in 1968, POSCO produces hot-rolled, cold-rolled and stainless
+                        | steel at Pohang Works, the largest single steel mill in the world,
+                        | and Gwangyang Works.
+                        | There are 17,877 employees working at POSCO as of end of 2014.
+                section
+                    h2 Top steel-producing companies (WSA)
+                    table
+                        thead.text-white
+                            tr
+                                th Rank in 2014
+                                th Company
+                                th Million Tonnes
+                        tbody
+                            tr
+                                td 1
+                                td ArcelorMittal
+                                td 98.088
+                            tr
+                                td 2
+                                td Nippon Steel and Sumitomo Metal Corporation
+                                td 49.300
+                            tr
+                                td 3
+                                td Hebei Steel Group
+                                td 47.094
+                            tr
+                                td 4
+                                td Baosteel Group
+                                td 43.347
+                            tr
+                                td 5
+                                td.background-grey POSCO
+                                td 41.428
+                section
+                    h3 World's most competitive steel company for five Consecutive year (WSD)
+                    table.text-center
+                        caption Most Competitive Steelmakers(2010~2014)
+                        thead.text-white
+                            tr
+                                th Rank
+                                th 2014.06
+                                th 2013.06
+                                th 2013.02
+                                th 2012.06
+                        tbody.font-small.up
+                            tr.background-grey
+                                td 1
+                                td
+                                    | POSCO
+                                    br
+                                    | (Korea)
+                                td
+                                    | POSCO
+                                    br
+                                    | (Korea)
+                                td
+                                    | POSCO
+                                    br
+                                    | (Korea)
+                                td
+                                    | POSCO
+                                    br
+                                    | (Korea)
+                            tr
+                                td 2
+                                td
+                                    | Nucor
+                                    br
+                                    | (U.S.A)
+                                td
+                                    | Severstal
+                                    br
+                                    | (Russia)
+                                td
+                                    | NLMK
+                                    br
+                                    | (Russia)
+                                td
+                                    | NLMK
+                                    br
+                                    | (Russia)
+                            tr
+                                td 3
+                                td
+                                    | NSSMC
+                                    br
+                                    | (Japan)
+                                td
+                                    | Nucor
+                                    br
+                                    | (U.S.A)
+                                td
+                                    | Severstal
+                                    br
+                                    | (Russia)
+                                td
+                                    | CSN
+                                    br
+                                    | (Brazil)
+                            tr
+                                td 4
+                                td
+                                    | Gerdau
+                                    br
+                                    | (Brazil)
+                                td
+                                    | NLMK
+                                    br
+                                    | (Russia)
+                                td
+                                    | JSW
+                                    br
+                                    | (India)
+                                td
+                                    | Severstal
+                                    br
+                                    | (Russia)
+                            tr
+                                td 5
+                                td
+                                    | Severstal
+                                    br
+                                    | (Russia)
+                                td
+                                    | NSSMC
+                                    br
+                                    | (Japan)
+                                td
+                                    | Bao Steel
+                                    br
+                                    | (China)
+                section
+                    p
+                        | POSCO ranked 36th in the “2015 Global 100 Most Sustainable
+                        | Corporations in the World” index at the Davos Forum 2015
+                        br
+                        img(src=require("../images/Picture6.png"))
+                    p(style="text-align: center; margin: 0")
+                        img(src=require("../images/Picture7.png"))
+                    table.text-center
+                        caption Changes in Credit Rating
+                        thead.text-white
+                            tr
+                                th
+                                th 2010
+                                th 2011
+                                th 2012
+                                th 2013
+                                th 2014
+                        tbody.font-small.up
+                            tr
+                                td S&P
+                                td
+                                    | A
+                                    br
+                                    | (Stable)
+                                td
+                                    | A-
+                                    br
+                                    | (Negative)
+                                td
+                                    | BBB+
+                                    br
+                                    | (Stable)
+                                td
+                                    | BBB+
+                                    br
+                                    | (Negative)
+                                td
+                                    | BBB+
+                                    br
+                                    | (Negative)
+                            tr
+                                td Moody's
+                                td
+                                    | A2
+                                    br
+                                    | (Negative)
+                                td
+                                    | A3
+                                    br
+                                    | (Negative)
+                                td
+                                    | Baa1
+                                    br
+                                    | (Negative)
+                                td
+                                    | Baa2
+                                    br
+                                    | (Stable)
+                                td
+                                    | Baa2
+                                    br
+                                    | (Stable)
+                section
+                    table
+                        caption Awards Received in 2014
+                        tbody.font-small
+                            tr
+                                td.bg-column(rowspan="8", width="100px", style="background-image: url('./images/overseas.png');")
+                                td 2014.06
+                                td
+                                    | Most Competitive Steelmaker, seven times in a ow for five consecutive years (WSD)
+                            tr
+                                td 2014.09
+                                td Leading Company in the RobecoSAM Dow Jones Sustainability Index
+                            tr
+                                td 2014.10
+                                td
+                                    | East Asia 30, 2014 (Hankyoreh Economic Research Institute, Asia CSR Expert Committee
+                            tr
+                                td 2014.12
+                                td
+                                    | Dongfeng Peugeot-Citroen Automobile (DPCA) Excellent Supplier Award for two consecutive years
+                            tr
+                                td 2015.01
+                                td.background-grey Ranked 36th at Davos Forum's Global 100 (Corporate Knights)
+                            tr
+                                td 2015.02
+                                td.background-grey Ranked 3rd in metals sector in World's Most Admired Companies (Fortune)
+                            tr
+                                td 2015.03
+                                td
+                                    | Supplier of the Year 
+                                    span(style="color: red") (GM)
+                            tr
+                                td 2015.03
+                                td
+                                    | "Excellent" Value Improvement Award for two consecutive years 
+                                    span(style="color: red") (Toyota)
+                            tr
+                                td.bg-column(rowspan="7", style="background-image: url('./images/domestic.png');")
+                                td 2014.02
+                                td 2015 Best Korea Brand, ranked second in Korea Master Brand
+                            tr
+                                td 2014.03
+                                td Korea Blog Award 2014, grand prize in Holding Company sector
+                            tr
+                                td 2014.07
+                                td Selected as Excellent win-win company at Korea Win-win Conference
+                            tr
+                                td 2014.10
+                                td CDP Korea, leading company in materials sector for six consecutive years
+                            tr
+                                td 2014.10
+                                td Grand prize in the 2014 4th SNS Grand Awards (two consecutive years)
+                            tr
+                                td 2014.11
+                                td Grand prize in the steel sector in Next Society SCR Summit 2014
+                            tr
+                                td 2015.02
+                                td.background-grey 5th prize in 2015 Most Respected Compay in Korea (12 consecutive years)
+            section
+                section.blur-background2
+                    h1.text-white 2. Company Overview
+                section(data-background-image="../images/brushsteel2.jpg")
+                    table.text-center
+                        caption General Information
+                        thead.font-medium.text-white
+                            tr
+                                th Name
+                                th Establishment ( Operation)
+                                th Investment Capital
+                                th No of Employees
+                                th Product
+                        tbody.font-medium
+                            tr
+                                td
+                                    | POSSO SS-VINA
+                                    br
+                                    | (100% owned by POSCO)
+                                td '10.05 ('15.01)
+                                td $ 594.4 milion
+                                td 860
+                                td
+                                    | Section
+                                    br
+                                    | Rebar
+                section(data-background-image="../images/brushsteel2.jpg")
+                    table.text-center
+                        caption Facilities and Prodution Capacity
+                        thead.text-white
+                            tr
+                                th(colspan="2")
+                                th Size
+                                th Capacity (thousand ton)
+                        tbody
+                            tr
+                                td Melting Factory
+                                td
+                                    | EAF
+                                    br
+                                    | LF
+                                    br
+                                    | CCM
+                                td
+                                    | 120t
+                                    br
+                                    | 1
+                                    br
+                                    | Combi caster
+                                td 1035
+                            tr
+                                td(rowspan="2") Rolling Factory
+                                td Section
+                                td H100x100 ~ H700x300
+                                td 500 * Max 700
+                            tr
+                                td Rebar
+                                td 10 ~ 51
+                                td 500
+                section(data-background-image="../images/brushsteel2.jpg")
+                    h3 Project Progress
+                    ul#timeline.timeline
+                        li.li.complete
+                            .timestamp
+                                span.date
+                                    | '10.15
+                                    span
+                            .status
+                                p
+                                    | Corporation
+                                    br
+                                    | Established
+                        li.li.complete
+                            .timestamp
+                                span.date
+                                    | '10.07
+                                    span
+                            .status
+                                p
+                                    | Pre’ Construction
+                                    br
+                                    | Started
+                        li.li.complete
+                            .timestamp
+                                span.date
+                                    | '10.08
+                                    span
+                            .status
+                                p
+                                    | Pre’ Construction
+                                    br
+                                    | Completed
+                        li.li.complete
+                            .timestamp
+                                span.date
+                                    | '11.11
+                                    span
+                            .status
+                                p
+                                    | Facilities
+                                    br
+                                    | Contract
+                        li.li.complete
+                            .timestamp
+                                span.date
+                                    | '12.05
+                                    span
+                            .status
+                                p
+                                    | Construction
+                                    br
+                                    | Contract
+                        li.li.complete
+                            .timestamp
+                                span.date
+                                    | '14.12
+                                    span
+                            .status
+                                p
+                                    | Cold Run
+                                    br
+                                    | Test
+                        li.li.complete
+                            .timestamp
+                                span.date
+                                    | '15.06
+                                    span
+                            .status
+                                p
+                                    | Inauguration
+                                    br
+                                    | ceremony
+            section
+                section
+                    h1
+                        | 3. Material flow
+                        br
+                        | & Capacity
+                section(data-background-image="../images/brushsteel2.jpg")
+                    h3 Material flow
+                    #tree.tree
+                        ul
+                            li
+                                a(href="#") Scrap 1,147
+                                ul
+                                    li
+                                        a(href="#") Beam Blank 412
+                                        ul
+                                            li
+                                                a(href="#") H-Beam 350
+                                            li
+                                                a(href="#") Channel 50
+                                    li
+                                        a(href="#") Bloom 108
+                                        ul
+                                            li
+                                                a(href="#") Angle 100
+                                    li
+                                        a(href="#") Billet 515
+                                        ul
+                                            li
+                                                a(href="#") Rebar 500
+                section(data-background-image="../images/brushsteel2.jpg")
+                    table.text-center
+                        caption Capacity
+                        thead.text-white
+                            tr
+                                th(colspan="2")
+                                th Equip./Size
+                                th Capacity (1,000MT)
+                        tbody
+                            tr
+                                td Melting
+                                td
+                                    | EAF
+                                    br
+                                    | LF
+                                    br
+                                    | CASTER
+                                td
+                                    | 120MT
+                                    br
+                                    | 1EA
+                                    br
+                                    | Combi caster
+                                td 1035
+                            tr
+                                td(rowspan="2") Rolling
+                                td Section
+                                td 100x100 ~ 700x300
+                                td 700
+                            tr
+                                td D/B
+                                td 10 ~ 51
+                                td 500
+            section
+                section
+                    h1 4. Manufacturing Process
+                section
+                    img(src=require("../images/Picture8.png"))
+            section
+                section
+                    h1 5. Product specifications
+                section(data-background-image="../images/brushsteel2.jpg")
+                    table
+                        thead
+                            tr.font-medium.text-white
+                                th Plant
+                                th(colspan="2") Product
+                                th Size(mm)
+                                th Lenght(m)
+                                th Capacity(t/y)
+                        tbody.font-small
+                            tr
+                                td(rowspan="3") Steel Making
+                                td(colspan="2") Beam Blank
+                                td
+                                    | BB1: 285x200x80
+                                    br
+                                    | BB2: 380x290x100
+                                    br
+                                    | BB3: 480x380x90
+                                td 4.5 ~ 12
+                                td(rowspan="3") 1,037,000
+                            tr
+                                td(colspan="2") Bloom
+                                td BL1: 200x300
+                                td 4.5 ~ 12
+                            tr
+                                td(colspan="2") Billet
+                                td
+                                    | BT1: 160x160
+                                    br
+                                    | 130x130
+                                td 8 ~ 12
+                            tr
+                                td(rowspan="5") Section Rolling
+                                td(colspan="2") H-Beam
+                                td 100x100 ~ 700x300
+                                td(rowspan="5")
+                                    | 6 ~ 24
+                                    br
+                                    | (mainly 12m)
+                                td(rowspan="5") 700,000
+                            tr
+                                td(rowspan="3") Angle
+                                td Equal
+                                td 100x100 ~ 200x200
+                            tr
+                                td Unequal
+                                td 100x75 ~ 150x90
+                            tr
+                                td Inverted
+                                td 200x90 ~ 300x90
+                            tr
+                                td(colspan="2") Channel
+                                td 150x75 ~ 380x100
+                            tr
+                                td Bar Rolling
+                                td(colspan="2") Deformed Bar
+                                td D10 ~ D51
+                                td 6 ~ 12
+                                td 500,000
+            section
+                section(data-background-image="../images/quality.jpg")
+                    h1 6. Quality certification
+                section(data-background-image="../images/brushsteel2.jpg")
+                    table
+                        thead.font-medium.text-white
+                            tr
+                                th Div
+                                th Contents
+                                th Date of Cert.Issued
+                                th Status
+                        tbody.font-small
+                            tr
+                                td CR Mark
+                                td
+                                    ul
+                                        li TCVN all size of D/Bar
+                                        li JIS all sizes of D/Bar
+                                td June 13, 2015
+                                td Completed
+                            tr
+                                td ISO 9001
+                                td International Standard
+                                td August 10, 2015
+                                td Completed
+                            tr
+                                td KS (Korean Standard)
+                                td
+                                    ul
+                                        li
+                                            | D/Bar
+                                            br
+                                            | KS D3504 SD300 / 400 / 500 (Size D10~D41)
+                                        li
+                                            | Section (H Beam, Angle, Channel)
+                                            ul
+                                                li KS D3503 SS400 / 490
+                                                li KS SD351 5SM400A / 400B,490A / 490B
+                                td Sept. 16, 2015
+                                td Completed
+                            tr
+                                td JIS
+                                td
+                                    ul
+                                        li
+                                            | D/Bar
+                                            br
+                                            | JIS G3112 SD295/345/390/490 (Size D10~D41)
+                                        li
+                                            | Section (H Beam, Angle, Channel)
+                                            ul
+                                                li JIS G3101 SS400/490
+                                                li JIS G3105 5SM400A / 400B /490A / 490B
+                                td
+                                    | Dec 2015 (F)
+                                td
+                                    | On-going
+            section
+                section
+                    h1 7. Quality Comparison of Rebar
+                section(data-background-image="../images/brushsteel2.jpg")
+                    table.text-center
+                        thead.font-medium.text-white
+                            tr
+                                td(colspan="2", rowspan="2")
+                                td(colspan="4") Vietnam Mill
+                                td(rowspan="2") SS-VINA
+                                td(colspan="3") Korea Mill
+                            tr
+                                td A
+                                td B
+                                td C
+                                td D
+                                td E
+                                td D
+                                td F
+                        tbody.font-small
+                            tr
+                                td(rowspan="3") Size
+                                td Unit mass
+                                td Fail(d10)
+                                td Pass
+                                td Fail(d10)
+                                td Pass
+                                td Pass
+                                td Pass
+                                td Pass
+                                td Pass
+                            tr
+                                td Rib Height
+                                td Pass
+                                td Pass
+                                td Pass
+                                td Pass
+                                td Pass
+                                td Pass
+                                td Pass
+                                td Pass
+                            tr
+                                td Rib
+                                td Fail(d10)
+                                td Fail(d10)
+                                td Pass
+                                td Pass
+                                td Pass
+                                td Pass
+                                td Pass
+                                td Pass
+                            tr
+                                td(rowspan="2") Surface
+                                td Defect
+                                td Scratch
+                                td Roll Mark
+                                td Pass
+                                td Pass
+                                td Pass
+                                td Crack
+                                td Crack
+                                td Crack
+                            tr
+                                td Roughness
+                                td Normal
+                                td Normal
+                                td Excellent
+                                td Excellent
+                                td Excellent
+                                td Normal
+                                td Normal
+                                td Normal
+                            tr
+                                td(colspan="2") Bending Test
+                                td Pass
+                                td Pass
+                                td Pass
+                                td Pass
+                                td Pass
+                                td Pass
+                                td Pass
+                                td Pass
+                            tr
+                                td(colspan="2")
+                                td o
+                                td o
+                                td o
+                                td o
+                                td o
+                                td o
+                                td o
+                                td o
+            section
+                h4 8. Radiation Measurement
+                img.w40(src=require("../images/Picture9.jpg"), alt="Raw material radiation detector")
+                img.w40(src=require("../images/Picture10.jpg"), alt="Detecting radiation of scraps")
+                img.w40(src=require("../images/Picture11.jpg"), alt="Final goods radiation detector")
+                img.w40(src=require("../images/Picture12.jpg"), alt="Detecting radiation of rebars")
+            section
+                h4 Attachment 1. POSCO SS-VINA KS Rebar Products
+                img.w40(src=require("../images/Picture13.jpg"), alt="")
+                img.w40(src=require("../images/Picture14.jpg"), alt="")
+                img.w40(src=require("../images/Picture15.jpg"), alt="")
+                img.w40(src=require("../images/Picture16.jpg"), alt="")
+            section
+                h4 Attachment 2. POSCO SS-VINA Section Steel
+                div(style="position: relative")
+                    img.w40(src=require("../images/Picture17.jpg"), alt="", style="float: left")
+                    img.w40(src=require("../images/Picture18.jpg"), alt="", style="float: right")
+                    img.w40(src=require("../images/Picture19.jpg"), alt="", style="float: right")
+            section
+                h4 Attachment 3. POSCO SS-VINA Factory Overview
+                img.w25(src=require("../images/Picture20.jpg"), alt="")
+                img.w25(src=require("../images/Picture21.jpg"), alt="")
+                img.w25(src=require("../images/Picture22.jpg"), alt="")
+                img.w25(src=require("../images/Picture23.jpg"), alt="")
+                img.w25(src=require("../images/Picture24.jpg"), alt="")
+                img.w25(src=require("../images/Picture25.jpg"), alt="")
+            section
+                h4 Attachment 4. Section Size Development Plan
+            section
+                h4 Attachment 5. Certification
+                img.w40(src=require("../images/Picture26.png"), alt="")
+                img.w40(src=require("../images/Picture27.png"), alt="")
+            section
+                img.w40(src=require("../images/Picture28.png"), alt="")
+                img.w40(src=require("../images/Picture29.png"), alt="")
+            section
+                img.w40(src=require("../images/Picture30.png"), alt="")
+                img.w40(src=require("../images/Picture31.png"), alt="")
+            section
+                h4 Attachment 6. Factory Location
+                img(src=require("../images/Picture32.gif"), alt="")
+
+

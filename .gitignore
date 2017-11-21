@@ -76,3 +76,8 @@ jspm_packages
 
 /03.WORKFLOW/WEBPACK_PUG_SASS_ES6/dist/
 /03.WORKFLOW/WEBPACK_PUG_SASS_ES6/node_modules/
+
+/05.Revealjs/001.Poscoss_Introduction/dist
+/05.Revealjs/001.Poscoss_Introduction/node_modules/
+/05.Revealjs/001.Poscoss_Introduction/src/images/
+/05.Revealjs/001.Poscoss_Introduction/src/fonts/
