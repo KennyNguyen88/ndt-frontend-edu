@@ -49,41 +49,41 @@ jspm_packages
 .yarn-integrity
 
 .idea/
-#01.HTML
-/01.HTML/PUG/**/*.html
+#01_HTML
+/01_HTML/PUG/**/*.html
 
-/01.HTML/PUG/Portfolio_2075DigitalTeam/fonts/
-/01.HTML/PUG/Portfolio_2075DigitalTeam/images/
+/01_HTML/PUG/Portfolio_2075DigitalTeam/fonts/
+/01_HTML/PUG/Portfolio_2075DigitalTeam/images/
 
-/01.HTML/PUG/Portfolio_adventure/fonts/
-/01.HTML/PUG/Portfolio_adventure/images/
+/01_HTML/PUG/Portfolio_adventure/fonts/
+/01_HTML/PUG/Portfolio_adventure/images/
 
-/01.HTML/PUG/Shop_bonfire/fonts/
-/01.HTML/PUG/Shop_bonfire/images/
+/01_HTML/PUG/Shop_bonfire/fonts/
+/01_HTML/PUG/Shop_bonfire/images/
 
-/01.HTML/PUG/Company_esms/fonts/
-/01.HTML/PUG/Company_esms/images/
+/01_HTML/PUG/Company_esms/fonts/
+/01_HTML/PUG/Company_esms/images/
 
-/01.HTML/PUG/Company_tera/fonts/
-/01.HTML/PUG/Company_tera/images/
+/01_HTML/PUG/Company_tera/fonts/
+/01_HTML/PUG/Company_tera/images/
 
-/01.HTML/PUG/Shop_salon/fonts/
-/01.HTML/PUG/Shop_salon/images/
+/01_HTML/PUG/Shop_salon/fonts/
+/01_HTML/PUG/Shop_salon/images/
 
-/02.CSS/**/*.html
-/02.CSS/**/*.css
-/02.CSS/**/*.map
+/02_CSS/**/*.html
+/02_CSS/**/*.css
+/02_CSS/**/*.map
 
-/03.WORKFLOW/WEBPACK_PUG_SASS_ES6/dist/
-/03.WORKFLOW/WEBPACK_PUG_SASS_ES6/node_modules/
+/03_WORKFLOW/WEBPACK_PUG_SASS_ES6/dist/
+/03_WORKFLOW/WEBPACK_PUG_SASS_ES6/node_modules/
 
-/04.Practice/**/*.psd
-/04.Practice/Sporthold/dist
-/04.Practice/Sporthold/node_modules
-/04.Practice/Sporthold/src/images/
-/04.Practice/Sporthold/src/fonts/
+/04_Practice/**/*.psd
+/04_Practice/Sporthold/dist
+/04_Practice/Sporthold/node_modules
+/04_Practice/Sporthold/src/images/
+/04_Practice/Sporthold/src/fonts/
 
-/05.Revealjs/001.Poscoss_Introduction/dist
-/05.Revealjs/001.Poscoss_Introduction/node_modules/
-/05.Revealjs/001.Poscoss_Introduction/src/images/
-/05.Revealjs/001.Poscoss_Introduction/src/fonts/
+/05_Revealjs/Poscoss_Introduction/dist
+/05_Revealjs/Poscoss_Introduction/node_modules/
+/05_Revealjs/Poscoss_Introduction/src/images/
+/05_Revealjs/Poscoss_Introduction/src/fonts/
