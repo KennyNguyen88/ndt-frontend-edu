@@ -76,6 +76,8 @@ jspm_packages
 
 /03_WORKFLOW/WEBPACK_PUG_SASS_ES6/dist/
 /03_WORKFLOW/WEBPACK_PUG_SASS_ES6/node_modules/
+/03_WORKFLOW/GULP_HTML_CSS_JS_LIVE/builds
+/03_WORKFLOW/GULP_HTML_CSS_JS_LIVE/node_modules
 
 /04_Practice/**/*.psd
 /04_Practice/Sporthold/dist
