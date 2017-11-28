@@ -1,0 +1,20 @@
+extends template/site
+block title
+    title typing
+block content
+    header.masthead
+        h1 Test Your Typing Speed     
+    main.main1
+        article.intro
+            p This is a typing test. Your goal is to duplicate the provided text, EXACTLY, in the field below. The timer starts when you start typing, and only stops when you match this text exactly. Good Luck!
+        section.test-area
+            #origin-text
+                p The text to test.
+            .test-wrapper
+                textarea#test-area(name='textarea', rows='6', placeholder='The clock starts when you start typing.')
+            .meta
+                section#clock
+                    .timer 00:00:00                
+                button#reset Start over
+block scripts
+    script(type="text/javascript" src="js/typing.js")

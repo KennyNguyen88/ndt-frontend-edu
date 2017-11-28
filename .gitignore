@@ -80,6 +80,8 @@ jspm_packages
 /03_WORKFLOW/GULP_HTML_CSS_JS_LIVE/node_modules
 /03_WORKFLOW/GULP_PUG_SCSS_ES6_LIVE/builds
 /03_WORKFLOW/GULP_PUG_SCSS_ES6_LIVE/node_modules
+/03_WORKFLOW/WEBPACK_REVEALJS_PUG_SASS_ES6_LIVE/dist/
+/03_WORKFLOW/WEBPACK_REVEALJS_PUG_SASS_ES6_LIVE/node_modules/
 
 /04_Practice/**/*.psd
 /04_Practice/Sporthold/dist
@@ -91,3 +93,6 @@ jspm_packages
 /05_Revealjs/Poscoss_Introduction/node_modules/
 /05_Revealjs/Poscoss_Introduction/src/images/
 /05_Revealjs/Poscoss_Introduction/src/fonts/
+
+/06_JS/Lynda/Essential_Training_Morten_Rand_Hendiksen/builds
+/06_JS/Lynda/Essential_Training_Morten_Rand_Hendiksen/.sass-cache/
