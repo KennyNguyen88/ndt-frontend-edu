@@ -1,18 +1,32 @@
 // // put event handlers for header links here
 
-$(document).ready(function(){
+var Header = (function(){
+    "use strict";
 
-    var $modal = $("[rel='js-modal']");
-
-    $("[rel='js-header']").on("click","[rel*='js-']", function(evt){
+    function headerLinkClicks(evt){
         evt.preventDefault();
 
         var url = $(evt.target).attr("href");
-        
-        $.ajax(url, {dataType: "text"})
-        .then(function(contents){
-            $modal.html(contents).show();
-        })
-    })
 
-});
+        $.ajax(url, {dataType: "text"})
+            .then(function(contents){
+                $modal.html(contents).show();
+            });
+    }
+
+    function init(){
+        $modal = $("[rel='js-modal']");
+
+        $("[rel='js-header']").on("click","[rel*='js-']", headerLinkClicks);
+    }
+
+    EVT.on("init", init);
+
+    var $modal;
+
+    return {
+      init: init
+    };
+
+})();
+
