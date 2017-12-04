@@ -1,0 +1,222 @@
+@mixin overlay($url,$value)
+{
+  background:  linear-gradient(
+                  rgba(0, 0, 0, $value),
+                  rgba(0, 0, 0, $value)
+  ),
+  url($url);
+  background-size: cover;
+}
+
+@mixin trbutton($color)
+{
+  border: 1px solid $color;
+  background: transparent;
+  color:  $color;
+  &:hover{
+
+  }
+}
+/*
+  Set a rem font size with pixel fallback
+  Usage:
+    p {
+      @include font-size(14px)
+    }
+  Output
+    p {
+    font-size: 14px; //Will be overridden if browser supports rem
+    font-size: 0.8rem;
+    }
+*/
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+/*
+  Breakpoints
+  Usage:
+    .sidebar {
+      width: 60%;
+      float: left;
+      margin: 0 2% 0 0;
+      @include bp(md) {
+        width: 100%;
+        float: none;
+        margin: 0;
+      }
+    }
+*/
+
+@mixin bp($point) {
+  @if $point == xl { // 1050px
+    @media (max-width: 65.625rem) { @content; }
+  }
+  @else if $point == lg { // 900px
+    @media (max-width: 56.25rem) { @content; }
+  }
+  @else if $point == md { // 768px
+    @media (max-width: 48rem)  { @content; }
+  }
+  @else if $point == sm { // 600px
+    @media (max-width: 37.5rem)  { @content; }
+  }
+  @else if $point == xs { // 400px
+    @media (max-width: 25rem)  { @content; }
+  }
+}
+
+/*
+  Animations and keyframes
+  Usage:
+    @include keyframes(slide-down) {
+      0% { opacity: 1; }
+      90% { opacity: 0; }
+    }
+
+    .element {
+      width: 100px;
+      height: 100px;
+      background: black;
+      @include animation('slide-down 5s 3');
+    }
+*/
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+/*
+  Transitions
+  Usage:
+    a {
+      color: gray;
+      @include transition(color .3s ease);
+      &:hover {
+        color: black;
+      }
+    }
+*/
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+/*
+  Cross browser opacity
+  Usage:
+  .faded-text {
+    @include opacity(0.8);
+  }
+*/
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+/*
+  Dealing with transparency
+  Usage:
+    @include rgba(bg, #fff, .7);
+*/
+
+@function solid-lighten($color, $percentage) {
+  @return lighten($color, (1-$percentage)*5%);
+}
+@function solid-darken($color, $percentage) {
+  @return darken($color, (1-$percentage)*5%);
+}
+@mixin rgba($type, $color, $percentage, $shade: ligthen) {
+  @if $shade == lighten {
+    @if $type == color {
+      color: solid-lighten($color, $percentage);
+      color: rgba($color, $percentage);
+    }
+    @if $type == bg {
+      background-color: solid-lighten($color, $percentage);
+      background-color: rgba($color, $percentage);
+    }
+  }
+  @else {
+    @if $type == color {
+      color: solid-darken($color, $percentage);
+      color: rgba($color, $percentage);
+    }
+    @if $type == bg {
+      background-color: solid-darken($color, $percentage);
+      background-color: rgba($color, $percentage);
+    }
+  }
+}
+
+/*
+  Triangles
+  Usage:
+    &:after {
+      @include triangle(down, 10px, blue);
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      margin-left: -12px;
+    }
+*/
+
+@mixin triangle($direction, $size: 0.375rem, $color: #222){
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0; width: 0;
+  @if ($direction == 'up'){
+    border-bottom: $size solid $color;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+  }
+  @else if ($direction == 'down'){
+    border-top: $size solid $color;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+  }
+  @else if ($direction == 'left'){
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-right: $size solid $color;
+  }
+  @else if ($direction == 'right'){
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+  }
+}
