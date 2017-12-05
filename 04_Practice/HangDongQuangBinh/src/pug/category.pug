@@ -1,0 +1,228 @@
+extends template/site
+block title
+    title Category
+block main
+    #main_slider.slider
+        ul.slides
+            li
+                img(src="./images/cave_01.jpg")
+                .caption.center-align
+                    h3 This is our big Tagline!
+                    h5.light.grey-text.text-lighten-3 Here's our small slogan.
+            li
+                img(src="./images/cave_02.jpg")
+                .caption.left-align
+                    h3 Left Aligned Caption
+                    h5.light.grey-text.text-lighten-3 Here's our small slogan.
+            li
+                img(src="./images/cave_03.jpg")
+                .caption.right-align
+                    h3 Right Aligned Caption
+                    h5.light.grey-text.text-lighten-3 Here's our small slogan.
+            li
+                img(src="./images/cave_04.jpg")
+                .caption.center-align
+                    h3 This is our big Tagline!
+                    h5.light.grey-text.text-lighten-3 Here's our small slogan.
+    main
+        .container
+            section#search.hide
+                .card-panel.white
+                    h1 Search
+                    .row
+                        .input-field.col.s5.push-s1
+                            select#NoiKhoiHanh
+                                option(value="", disabled="", selected="") ---All---
+                                option(value="1") TP Ho Chi Minh
+                                option(value="2") Ha Noi
+                                option(value="3") Vung Tau
+                            label(for="NoiKhoiHanh") Noi Khoi Hanh
+                        .input-field.col.s5.push-s1
+                            select#NoiDen
+                                option(value="", disabled="", selected="") ---All---
+                                option(value="1") TP Ho Chi Minh
+                                option(value="2") Ha Noi
+                                option(value="3") Vung Tau
+                            label(for="NoiDen") Noi Den
+                    .row
+                        .input-field.col.s5.push-s1
+                            input#pfrom.validate(type="text")
+                            label(for="pfrom") Gia Tu
+                        .input-field.col.s6.push-s1
+                            input#pto.validate(type="text")
+                            label(for="pto") Gia Den
+                    .row
+                        .right
+                            a.btn(href="#")
+                                i.material-icons.right search
+                                | SEARCH
+            section(id="")
+                .card-panel
+                    nav
+                        .breadcrumb-cover
+                            .col.s12
+                                a.breadcrumb(href="#!") First
+                                a.breadcrumb(href="#!") Second
+                                a.breadcrumb(href="#!") Third
+                    ul#liststyle.right
+                        li
+                            a(href="#")
+                                i.mdi.mdi-lg.mdi-format-list-bulleted
+                        li
+                            a(href="#")
+                                i.mdi.mdi-lg.mdi-view-column
+                    h1 Category 1
+                    .row
+                        .col.s3
+                            .card
+                                .card-image
+                                    img(src="./images/cave_01.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                        .col.s3
+                            .card
+                                .card-image
+                                    img(src="./images/cave_01.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                        .col.s3
+                            .card
+                                .card-image
+                                    img(src="./images/cave_01.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                        .col.s3
+                            .card
+                                .card-image
+                                    img(src="./images/cave_01.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                    .row
+                        .col.s3
+                            .card
+                                .card-image
+                                    img(src="./images/cave_01.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                        .col.s3
+                            .card
+                                .card-image
+                                    img(src="./images/cave_01.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                        .col.s3
+                            .card
+                                .card-image
+                                    img(src="./images/cave_01.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                        .col.s3
+                            .card
+                                .card-image
+                                    img(src="./images/cave_01.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                .card-panel
+                    nav
+                        .breadcrumb-cover
+                            .col.s12
+                                a.breadcrumb(href="#!") First
+                                a.breadcrumb(href="#!") Second
+                                a.breadcrumb(href="#!") Third
+                    ul#liststyle.right
+                        li
+                            a(href="#")
+                                i.mdi.mdi-lg.mdi-format-list-bulleted
+                        li
+                            a(href="#")
+                                i.mdi.mdi-lg.mdi-view-column
+                    h1 Category 1
+                    .row
+                        .col.s12
+                            .card-panel.grey.lighten-5.z-depth-1
+                                .row.valign-wrapper
+                                    .col.s2
+                                        img.circle.responsive-img(src="./images/cave_01.jpg", alt="")
+                                       
+                                    .col.s10
+                                        span.black-text
+                                            | This is a square image. Add the "circle" class to it to make it appear circular.
+                        .col.s12
+                            .card-panel.grey.lighten-5.z-depth-1
+                                .row.valign-wrapper
+                                    .col.s2
+                                        img.circle.responsive-img(src="./images/cave_02.jpg", alt="")
+                                        
+                                    .col.s10
+                                        span.black-text
+                                            | This is a square image. Add the "circle" class to it to make it appear circular.
+                        .col.s12
+                            .card-panel.grey.lighten-5.z-depth-1
+                                .row.valign-wrapper
+                                    .col.s2
+                                        img.circle.responsive-img(src="./images/cave_03.jpg", alt="")
+                                        
+                                    .col.s10
+                                        span.black-text
+                                            | This is a square image. Add the "circle" class to it to make it appear circular.
+                        .col.s12
+                            .card-panel.grey.lighten-5.z-depth-1
+                                .row.valign-wrapper
+                                    .col.s2
+                                        img.circle.responsive-img(src="./images/cave_04.jpg", alt="")
+                                        
+                                    .col.s10
+                                        span.black-text
+                                            | This is a square image. Add the "circle" class to it to make it appear circular.
+        .fixed-action-btn(style="bottom: 45px; right: 24px;")
+            a.btn-floating.btn-large.red
+                i.mdi.mdi-playlist-plus
+            ul
+                li
+                    a.btn-floating.btn-large.red
+                        i.mdi.mdi-google-plus
+                li
+                    a.btn-floating.btn-large.blue.darken-1
+                        i.mdi.mdi-facebook
+                li
+                    a.btn-floating.btn-large.green
+                        i.mdi.mdi-cart-outline
+                li
+                    a.btn-floating.btn-large.brown
+                        i.mdi.mdi-magnify

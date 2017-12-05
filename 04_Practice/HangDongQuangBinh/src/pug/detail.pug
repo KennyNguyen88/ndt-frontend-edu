@@ -1,0 +1,110 @@
+extends template/site
+block title
+    title Detail
+block header
+    header
+        .navbar-fixed
+            ul#dropdown1.dropdown-content
+                li
+                    a(href="#!") one
+                li
+                    a(href="#!") two
+                li.divider
+                li
+                    a(href="#!") three
+block main
+    main(style="background-image: url('./images/cave_02.jpg');background-size: cover;")
+        .container
+            section#search.hide
+                .card-panel.white
+                    h1 Search
+                    .row
+                        .input-field.col.s5.push-s1
+                            select#NoiKhoiHanh
+                                option(value="", disabled="", selected="") ---All---
+                                option(value="1") TP Ho Chi Minh
+                                option(value="2") Ha Noi
+                                option(value="3") Vung Tau
+                            label(for="NoiKhoiHanh") Noi Khoi Hanh
+                        .input-field.col.s5.push-s1
+                            select#NoiDen
+                                option(value="", disabled="", selected="") ---All---
+                                option(value="1") TP Ho Chi Minh
+                                option(value="2") Ha Noi
+                                option(value="3") Vung Tau
+                            label(for="NoiDen") Noi Den
+                    .row
+                        .input-field.col.s5.push-s1
+                            input#pfrom.validate(type="text")
+                            label(for="pfrom") Gia Tu
+                        .input-field.col.s6.push-s1
+                            input#pto.validate(type="text")
+                            label(for="pto") Gia Den
+                    .row
+                        .right
+                            a.btn(href="#")
+                                i.material-icons.right search
+                                | SEARCH
+            section(id="")
+                .row
+                    .col.s9
+                        #content.card-panel
+                            nav
+                                .breadcrumb-cover
+                                    .col.s12
+                                        a.breadcrumb(href="#!") First
+                                        a.breadcrumb(href="#!") Second
+                                        a.breadcrumb(href="#!") Third
+                            h1 Tour name
+                            p Social box
+                            p
+                                | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                                | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    .col.s3
+                        .row
+                            .col.s12
+                                #news.card-panel
+                                    h3 News
+                                    .row
+                                        .col.s12
+                                            .card
+                                                .card-image
+                                                    img(src="./images/cave_01.jpg")
+                                                    span.card-title Card Title
+                                        .col.s12
+                                            .card
+                                                .card-image
+                                                    img(src="./images/cave_02.jpg")
+                                                    span.card-title Card Title
+                            .col.s12
+                                #hots.card-panel
+                                    h3 Hots
+                                    .row
+                                        .col.s12
+                                            .card
+                                                .card-image
+                                                    img(src="./images/cave_03.jpg")
+                                                    span.card-title Card Title
+                                        .col.s12
+                                            .card
+                                                .card-image
+                                                    img(src="./images/cave_04.jpg")
+                                                    span.card-title Card Title
+        .fixed-action-btn(style="bottom: 45px; right: 24px;")
+            a.btn-floating.btn-large.red
+                i.mdi.mdi-playlist-plus
+            ul
+                li
+                    a.btn-floating.btn-large.red
+                        i.mdi.mdi-google-plus
+                li
+                    a.btn-floating.btn-large.blue.darken-1
+                        i.mdi.mdi-facebook
+                li
+                    a.btn-floating.btn-large.green
+                        i.mdi.mdi-cart-outline
+                li
+                    a.btn-floating.btn-large.brown
+                        i.mdi.mdi-magnify

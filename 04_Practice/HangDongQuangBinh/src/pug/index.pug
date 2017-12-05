@@ -1,0 +1,135 @@
+extends template/site
+block title
+    title Index
+block main
+    #front_slider.slider
+        ul.slides
+            li
+                a(href="#")
+                    img(src="./images/cave_01.jpg")
+                .caption.center-align
+                    h3 This is our big Tagline!
+                    h5.light.grey-text.text-lighten-3 Here's our small slogan.
+            li
+                a(href="#")
+                    img(src="./images/cave_02.jpg")
+                .caption.left-align
+                    h3 Left Aligned Caption
+                    h5.light.grey-text.text-lighten-3 Here's our small slogan.
+            li
+                a(href="#")
+                    img(src="./images/cave_03.jpg")
+                .caption.right-align
+                    h3 Right Aligned Caption
+                    h5.light.grey-text.text-lighten-3 Here's our small slogan.
+            li
+                a(href="#")
+                    img(src="./images/cave_04.jpg")
+                .caption.center-align
+                    h3 This is our big Tagline!
+                    h5.light.grey-text.text-lighten-3 Here's our small slogan.
+    main
+        .container
+            section#search
+                .card-panel.white
+                    h1 Search
+                    .row
+                        .input-field.col.m5.s12.push-m1
+                            select#NoiKhoiHanh
+                                option(value="", disabled="", selected="") ---All---
+                                option(value="1") TP Ho Chi Minh
+                                option(value="2") Ha Noi
+                                option(value="3") Vung Tau
+                            label(for="NoiKhoiHanh") Noi Khoi Hanh
+                        .input-field.col.m5.s12.push-m1
+                            select#NoiDen
+                                option(value="", disabled="", selected="") ---All---
+                                option(value="1") TP Ho Chi Minh
+                                option(value="2") Ha Noi
+                                option(value="3") Vung Tau
+                            label(for="NoiDen") Noi Den
+                    .row
+                        .col.m5.s12.push-m1
+                            label(for="pfromdate") Ngay khoi hanh
+                            input#pfromdate.browser-default(type="date")
+                        .col.m5.s12.push-m1
+                            label(for="ptodate") Ngay ket thuc
+                            input#ptodate.browser-default(type="date")
+                    .row
+                        .input-field.col.m6.s12.push-m3
+                            select#gia
+                                option(value="", disabled="", selected="") ---Gia---
+                                option(value="1") < 20,000,000
+                                option(value="2") < 10,000,000
+                                option(value="3") < 5,000,000
+                            label(for="gia") Gia
+                    .row
+                        .right
+                            a.btn(href="#")
+                                i.material-icons.right search
+                                | SEARCH
+            section(id="")
+                .row
+                    .col.m6.s12
+                        .card.large
+                            .card-image.waves-effect.waves-block.waves-light
+                                a(href="#")
+                                    img(src="./images/cave_01.jpg")
+                            .card-content
+                                span.card-title.grey-text.text-darken-4 Category 1
+                                p
+                                    a(href="#") More...
+                    .col.m6.s12
+                        .card.large
+                            .card-image.waves-effect.waves-block.waves-light
+                                a(href="#")
+                                    img(src="./images/cave_02.jpg")
+                            .card-content
+                                span.card-title.grey-text.text-darken-4 Category 2
+                                p
+                                    a(href="#") More...
+                .row
+                    .col.m6.s12
+                        .card.large
+                            .card-image.waves-effect.waves-block.waves-light
+                                a(href="#")
+                                    img(src="./images/cave_03.jpg")
+                            .card-content
+                                span.card-title.grey-text.text-darken-4 Category 3
+                                p
+                                    a(href="#") More...
+                    .col.m6.s12
+                        .card.large
+                            .card-image.waves-effect.waves-block.waves-light
+                                a(href="#")
+                                    img(src="./images/cave_04.jpg")
+                            .card-content
+                                span.card-title.grey-text.text-darken-4 Category 4
+                                p
+                                    a(href="#") More...
+            section#newsletter
+                .row.center-align
+                    .input-field.col.m6.push-m3.s12
+                        input#subscribe_box.validate(type="text")
+                        label(for="subscribe_box") Input Email to Subcribe
+                .row.center-align
+                    a.btn-large(href="#") Subscribe
+        .fixed-action-btn(style="bottom: 45px; right: 24px;")
+            a.btn-floating.btn-large.red
+                i.mdi.mdi-playlist-plus
+            ul
+                li
+                    a.btn-floating.btn-large.red
+                        i.mdi.mdi-google-plus
+                li
+                    a.btn-floating.btn-large.blue.darken-1
+                        i.mdi.mdi-facebook
+                li
+                    a.btn-floating.btn-large.green
+                        i.mdi.mdi-cart-outline
+                li
+                    a.btn-floating.btn-large.brown
+                        i.mdi.mdi-magnify
+    
+
+

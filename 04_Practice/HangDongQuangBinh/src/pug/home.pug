@@ -1,0 +1,395 @@
+extends template/site
+block title
+    title Home
+block main
+    #main_slider.slider
+        ul.slides
+            li
+                img(src="./images/cave_01.jpg")
+                .caption.center-align
+                    h3 This is our big Tagline!
+                    h5.light.grey-text.text-lighten-3 Here's our small slogan.
+            li
+                img(src="./images/cave_02.jpg")
+                .caption.left-align
+                    h3 Left Aligned Caption
+                    h5.light.grey-text.text-lighten-3 Here's our small slogan.
+            li
+                img(src="./images/cave_03.jpg")
+                .caption.right-align
+                    h3 Right Aligned Caption
+                    h5.light.grey-text.text-lighten-3 Here's our small slogan.
+            li
+                img(src="./images/cave_04.jpg")
+                .caption.center-align
+                    h3 This is our big Tagline!
+                    h5.light.grey-text.text-lighten-3 Here's our small slogan.
+    main
+        .container
+            section#search
+                .card-panel.white
+                    h1 Search
+                    .row
+                        .input-field.col.m5.s12.push-m1
+                            select#NoiKhoiHanh
+                                option(value="", disabled="", selected="") ---All---
+                                option(value="1") TP Ho Chi Minh
+                                option(value="2") Ha Noi
+                                option(value="3") Vung Tau
+                            label(for="NoiKhoiHanh") Noi Khoi Hanh
+                        .input-field.col.m5.s12.push-m1
+                            select#NoiDen
+                                option(value="", disabled="", selected="") ---All---
+                                option(value="1") TP Ho Chi Minh
+                                option(value="2") Ha Noi
+                                option(value="3") Vung Tau
+                            label(for="NoiDen") Noi Den
+                    .row
+                        .col.m5.s12.push-m1
+                            label(for="pfromdate") Ngay khoi hanh
+                            input#pfromdate.browser-default(type="date")
+                        .col.m5.s12.push-m1
+                            label(for="ptodate") Ngay ket thuc
+                            input#ptodate.browser-default(type="date")
+                    .row
+                        .input-field.col.m6.s12.push-m3
+                            select#gia
+                                option(value="", disabled="", selected="") ---Gia---
+                                option(value="1") < 20,000,000
+                                option(value="2") < 10,000,000
+                                option(value="3") < 5,000,000
+                            label(for="gia") Gia
+                    .row
+                        .right
+                            a.btn(href="#")
+                                i.material-icons.right search
+                                | SEARCH
+            section(id="")
+                .card-panel
+                    h1 Category 1
+                    .row
+                        .col.m3.s12
+                            .card
+                                .card-image
+                                    img.activator(src="./images/cave_01.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                                    a.btn.right(href="#")
+                                        i.mdi.mdi-cart-outline
+                                        | Book
+                        .col.m3.s12
+                            .card
+                                .card-image
+                                    img.activator(src="./images/cave_01.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                                    a.btn.right(href="#")
+                                        i.mdi.mdi-cart-outline
+                                        | Book
+                        .col.m3.s12
+                            .card
+                                .card-image
+                                    img.activator(src="./images/cave_01.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                                    a.btn.right(href="#")
+                                        i.mdi.mdi-cart-outline
+                                        | Book
+                        .col.m3.s12
+                            .card
+                                .card-image
+                                    img.activator(src="./images/cave_01.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                                    a.btn.right(href="#")
+                                        i.mdi.mdi-cart-outline
+                                        | Book
+                    .row
+                        h5
+                            a.right(href="#") More...
+                .card-panel
+                    h1 Category 2
+                    .row
+                        .col.m3.s12
+                            .card
+                                .card-image
+                                    img.activator(src="./images/cave_02.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                                    a.btn.right(href="#")
+                                        i.mdi.mdi-cart-outline
+                                        | Book
+                        .col.m3.s12
+                            .card
+                                .card-image
+                                    img.activator(src="./images/cave_02.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                                    a.btn.right(href="#")
+                                        i.mdi.mdi-cart-outline
+                                        | Book
+                        .col.m3.s12
+                            .card
+                                .card-image
+                                    img.activator(src="./images/cave_02.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                                    a.btn.right(href="#")
+                                        i.mdi.mdi-cart-outline
+                                        | Book
+                        .col.m3.s12
+                            .card
+                                .card-image
+                                    img.activator(src="./images/cave_02.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                                    a.btn.right(href="#")
+                                        i.mdi.mdi-cart-outline
+                                        | Book
+                    .row
+                        h5
+                            a.right(href="#") More...
+                .card-panel
+                    h1 Category 3
+                    .row
+                        .col.m3.s12
+                            .card
+                                .card-image
+                                    img.activator(src="./images/cave_03.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                                    a.btn.right(href="#")
+                                        i.mdi.mdi-cart-outline
+                                        | Book
+                        .col.m3.s12
+                            .card
+                                .card-image
+                                    img.activator(src="./images/cave_03.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                                    a.btn.right(href="#")
+                                        i.mdi.mdi-cart-outline
+                                        | Book
+                        .col.m3.s12
+                            .card
+                                .card-image
+                                    img.activator(src="./images/cave_03.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                                    a.btn.right(href="#")
+                                        i.mdi.mdi-cart-outline
+                                        | Book
+                        .col.m3.s12
+                            .card
+                                .card-image
+                                    img.activator(src="./images/cave_03.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                                    a.btn.right(href="#")
+                                        i.mdi.mdi-cart-outline
+                                        | Book
+                    .row
+                        h5
+                            a.right(href="#") More...
+                .card-panel
+                    h1 Category 4
+                    .row
+                        .col.m3.s12
+                            .card
+                                .card-image
+                                    img.activator(src="./images/cave_04.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                                    a.btn.right(href="#")
+                                        i.mdi.mdi-cart-outline
+                                        | Book
+                        .col.m3.s12
+                            .card
+                                .card-image
+                                    img.activator(src="./images/cave_04.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                                    a.btn.right(href="#")
+                                        i.mdi.mdi-cart-outline
+                                        | Book
+                        .col.m3.s12
+                            .card
+                                .card-image
+                                    img.activator(src="./images/cave_04.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                                    a.btn.right(href="#")
+                                        i.mdi.mdi-cart-outline
+                                        | Book
+                        .col.m3.s12
+                            .card
+                                .card-image
+                                    img.activator(src="./images/cave_04.jpg")
+                                    span.card-title Card Title
+                                .card-content
+                                    p
+                                        | I am a very simple card. I am good at containing small bits of information.
+                                        | I am convenient because I require little markup to use effectively.
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | Card Title
+                                        i.material-icons.right close
+                                    p
+                                        | Here is some more information about this product that is only revealed once clicked on.
+                                    a.btn.right(href="#")
+                                        i.mdi.mdi-cart-outline
+                                        | Book
+                    .row
+                        h5
+                            a.right(href="#") More...
+        .fixed-action-btn(style="bottom: 45px; right: 24px;")
+            a.btn-floating.btn-large.red
+                i.mdi.mdi-playlist-plus
+            ul
+                li
+                    a.btn-floating.btn-large.red
+                        i.mdi.mdi-google-plus
+                li
+                    a.btn-floating.btn-large.blue.darken-1
+                        i.mdi.mdi-facebook
+                li
+                    a.btn-floating.btn-large.green
+                        i.mdi.mdi-cart-outline
+                li
+                    a.btn-floating.btn-large.brown
+                        i.mdi.mdi-magnify

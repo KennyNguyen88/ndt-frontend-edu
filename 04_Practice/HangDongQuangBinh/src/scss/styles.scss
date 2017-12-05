@@ -1,0 +1,121 @@
+//Custom
+@import "utility/manifest";
+@import "base/manifest";
+@import "component/manifest";
+@import "layout/manifest";
+
+$link-color: #26a69a;
+$button-bg-color: #26a69a;
+
+a, h1{
+  color: $link-color;
+}
+
+.slider{
+  margin-top: -64px;
+  .indicators{
+    text-align: left;
+    bottom: 35px;
+    z-index: 99;
+    .indicator-item{
+      background-color: grey;
+      opacity: 0.7;
+      margin-right: 12px;
+      border-radius: 0;
+      &.active {
+        background-color: $button-bg-color;
+      }
+    }
+
+  }
+}
+
+nav{
+  background-color: transparent;
+  .nav-wrapper{
+    &.top{
+      background-color: rgba(255,255,255,0.4);
+      ul{
+        li{
+          &:hover,&:active{
+            background-color: rgba(0,0,0,.1);
+          }
+        }
+      }
+
+    }
+    &.no-top{
+      background-color: black;
+      color: #ffffff;
+      ul{
+        li{
+          &:hover,&:active{
+            background-color: rgba(256,256,256,.4);
+          }
+        }
+      }
+    }
+
+  }
+  ul{
+    margin-right: 50px;
+    li{
+      a{
+        color: gainsboro;
+
+      }
+    }
+  }
+  .brand-logo{
+    color: gainsboro;
+    margin-left: 50px;
+  }
+  .breadcrumb-cover{
+    .breadcrumb{
+      color: gainsboro;
+      padding-left: 20px;
+      &:before{
+        color: gainsboro;
+      }
+    }
+    background-color: #795548;
+  }
+}
+
+.card{
+  &.small, &.medium, &.large {
+    .card-image {
+      max-height: 80%;
+    }
+    .card-content {
+      max-height: 20%;
+    }
+  }
+  .card-image{
+    .activator:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+.breadcrumb{
+  color: #000000;
+  &:before{
+    color: #000000;
+  }
+  &:last-child {
+    color: #000000;
+  }
+}
+
+#liststyle{
+  li{
+    display: inline;
+  }
+}
+
+footer{
+  background-color: #000000;
+  padding: 40px;
+  color: #ffffff;
+}

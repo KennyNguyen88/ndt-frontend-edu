@@ -1,0 +1,15 @@
+doctype html
+include ../utility/mixins
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        block title
+            title Webpack starter kit for PUG, SASS, ES6
+    body
+        block header
+            include ../layout/header
+        block main
+            include ../layout/main
+        block footer
+            include ../layout/footer
