@@ -1,0 +1,60 @@
+.wrapper{
+  width: 80%;
+  margin: auto;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+%box{
+  position: relative;
+  float: left;
+  &:before{
+    content: '';
+    display: block;
+  }
+  > .inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+.sq44{
+  @extend %box;
+  width: 50%;
+  &:before{
+    padding-top: 100%;
+  }
+  > .inner{
+    margin: 0 1rem 0 0;
+    background-color: yellowgreen;
+  }
+}
+.sq21{
+  @extend %box;
+  width: 50%;
+  &:before{
+    padding-top: 50%;
+  }
+  > .inner{
+    margin: 0 0 1rem 0;
+    background-color: orange;
+  }
+}
+.sq11{
+  @extend %box;
+  width: 25%;
+  &:before{
+    padding: 50%;
+  }
+  > .inner{
+    background-color: aqua;
+  }
+  &.left {
+    .inner {
+      margin: 0 1rem 0 0;
+    }
+  }
+}

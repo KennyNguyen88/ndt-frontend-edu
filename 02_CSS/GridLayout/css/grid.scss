@@ -1,0 +1,104 @@
+/* ===================================== 
+   Grid Layout
+======================================== */
+.grid-1{
+    margin: 10px auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 320px 20% auto;
+    grid-template-rows: 50px 100px;
+
+    /*grid-column-gap: 20px;*/
+    /*grid-row-gap: 10px;*/
+    grid-gap: 10px 20px; /*Short hand: row column*/
+}
+.grid-2{
+    margin: 10px auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-gap: 10px;
+}
+.grid-3{
+    margin: 10px auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    grid-template-rows: 50px;
+    grid-gap: 10px;
+}
+.grid-4{
+    margin: 10px auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: minmax(100px,1fr) repeat(2,minmax(200px,1fr)) ;
+    grid-template-rows: 50px;
+    grid-gap: 10px;
+}
+.grid-5{
+    margin: 10px auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr)) ;
+    grid-template-rows: 50px;
+    grid-gap: 10px;
+}
+.grid-6{
+    margin: 10px auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows: 50px 100px;
+    grid-auto-rows: minmax(70px, auto); /*Control implicit grid*/
+    grid-gap: 10px;
+}
+.grid-7{
+    margin: 10px auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows: 50px 100px;
+    grid-auto-columns: 1fr; /*Control implicit grid*/
+    grid-gap: 10px;
+    grid-auto-flow: column;
+}
+header {
+    background-color: #3f8abf;
+}
+nav {
+    background-color: #fbaea8;
+}
+main {
+    background-color: #aad2ed;
+}
+aside {
+    background-color: #6ad78a;
+}
+footer {
+    background-color: #6e859c;
+}
+.container > * {
+    color: #fff;
+    text-shadow: 0 2px 0 rgba(110,133,156,0.12);
+    padding: 0.85em;
+    border: solid 1px rgba(110,133,156,0.15);
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px minmax(200px, 1fr) 100px;
+    grid-gap: 10px;
+}
+header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+footer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
