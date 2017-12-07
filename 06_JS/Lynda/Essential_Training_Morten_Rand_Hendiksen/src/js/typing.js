@@ -1,3 +1,4 @@
+window.EVT = new EventEmitter2();
 const testWrapper = document.querySelector(".test-wrapper");
 const testArea = document.querySelector("#test-area");
 const originText = document.querySelector("#origin-text p").innerHTML;
@@ -6,7 +7,8 @@ const theTimer = document.querySelector(".timer");
 var timer = [0,0,0,0];
 var intervalId;
 var timerRunning = false;
-// Add leading zero to numbers 9 or below (purely for aesthetics):
+/* Utility */
+// Add leading zero to numbers 9 or below (purely for aesthetics)
 function leadingZero(time){
     if (time < 9){
         time = "0" + time;
@@ -14,7 +16,9 @@ function leadingZero(time){
     return time;
 }
 
-// Run a standard minute/second/hundredths timer:
+/* Main */
+
+// Run a standard minute/second/hundredths timer
 function runTimer(){
     let currentTime = leadingZero(timer[0]) + ":" + leadingZero(timer[1]) + ":" + leadingZero(timer[2]);
     theTimer.innerHTML = currentTime;
@@ -24,15 +28,31 @@ function runTimer(){
     timer[1] = Math.floor((timer[3]/100) - (timer[0] * 60)) // seconds
     timer[2] = Math.floor(timer[3] - (timer[1] * 100) - (timer[0] * 6000));
 }
+function doStart(){
+    intervalId = setInterval(runTimer, 10);
+}
+EVT.on("start", doStart);
+function keyPressHandle(){
+    let textEnteredLength = this.value.length;
+    if (textEnteredLength === 0 && !timerRunning){
+        timerRunning = true;
+        EVT.emit("start");
+    }
+}
+testArea.addEventListener("keypress",keyPressHandle,false);
 
+function doStop(){
+    clearInterval(intervalId);
+}
+EVT.on("stop", doStop);
 // Match the text entered with the provided text on the page:
 function spellCheck(){
-    let textEntered = testArea.value;
+    let textEntered = this.value;
     let originTextMatch = originText.substring(0, textEntered.length);
 
     if (textEntered == originText){
         testWrapper.style.borderColor = "#429890";
-        stop();
+        EVT.emit("stop")
     }
     else{
         if (textEntered == originTextMatch){
@@ -43,19 +63,7 @@ function spellCheck(){
         }
     }
 }
-
-// Start the timer:
-function start(){
-    let textEnteredLength = testArea.value.length;
-    if (textEnteredLength === 0 && !timerRunning){
-        timerRunning = true;
-        intervalId = setInterval(runTimer, 10);
-    }
-}
-function stop(){
-    console.log("stop");
-    clearInterval(intervalId);
-}
+testArea.addEventListener("keyup",spellCheck,false);
 
 // Reset everything:
 function reset(){
@@ -67,8 +75,4 @@ function reset(){
     theTimer.innerHTML = "00:00:00";
     testWrapper.style.borderColor = "grey";
 }
-
-// Event listeners for keyboard input and the reset button:
-testArea.addEventListener("keypress",start,false);
-testArea.addEventListener("keyup",spellCheck,false);
 resetButton.addEventListener("click", reset, false);
