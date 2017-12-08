@@ -1,0 +1,21 @@
+doctype html
+include ../utility/mixins
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="description", content="Free Web tutorials")
+        meta(name="keywords", content="HTML,CSS,JavaScript")
+        meta(name="author", content="Nguyen Duc Trung")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        block title
+            title Webpack starter kit for REVEALJS, PUG, SASS, ES6
+    body
+        block header
+            .container
+                include ../layout/header
+        block main
+            .container
+                include ../layout/main
+        block footer
+            .container
+                include ../layout/footer
