@@ -1,0 +1,35 @@
+@import "../../node_modules/animate.css/animate.min.css";
+//reset
+ul {
+    list-style-type: none !important;
+}
+
+//typography
+h1{
+    font-size: 56px !important;
+}
+h5{
+    font-size: 24px !important;
+}
+h6{
+    font-size: 22px !important;
+}
+p{
+    font-size: 16px !important;
+}
+
+//color
+
+$color-primary: #7f7f7f;
+$color-secondary: #a6a6a6;
+
+$color-aqua: #1aad96;
+$color-grey: #94a4b5;
+$color-darken-grey: darken($color-grey, 50%);
+$color-orange: orange;
+$color-red: red;
+$color-green: green;
+
+
+
+

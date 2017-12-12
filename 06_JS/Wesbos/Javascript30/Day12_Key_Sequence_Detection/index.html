@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+</head>
+<body>
+<script>
+
+  let keypressed = [];
+  let secret = 'trung';
+  window.addEventListener("keyup", (e) => {
+    // console.log(e.key);
+    keypressed.push(e.key.toLowerCase());
+    let matching = keypressed.slice(-secret.length);
+    console.log(matching.join(''));
+    if (matching.join('') === secret){
+      console.log("TADA");
+    }
+
+  })
+
+</script>
+</body>
+</html>

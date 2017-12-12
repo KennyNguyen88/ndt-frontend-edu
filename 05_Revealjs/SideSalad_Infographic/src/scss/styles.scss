@@ -3,3 +3,13 @@
 @import "base/manifest";
 @import "component/manifest";
 @import "layout/manifest";
+
+.flex{
+    display: flex !important;
+    &.fd-row{
+        flex-direction: row;
+    }
+    &.fd-col{
+        flex-direction: column;
+    }
+}

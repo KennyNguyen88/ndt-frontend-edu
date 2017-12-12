@@ -3,10 +3,10 @@
 import "./scss/styles.scss";
 
 //Require all images - make convenience working with pug
-// var req = require.context("./images", true, /\.(png|svg|jpe?g|gif)$/);
-// req.keys().forEach(function(key){
-//     req(key);
-// });
+var req = require.context("./images", true, /\.(png|svg|jpe?g|gif)$/);
+req.keys().forEach(function(key){
+    req(key);
+});
 
 //Revealjs Dependency
 require ("./js/head.min.js");
@@ -24,7 +24,7 @@ Reveal.initialize({
 // require("./js/classList");
 // require("./js/html5shiv");
 
-// Reveal.initialize({
+ Reveal.initialize({
     
 //         // Display presentation control arrows
 //         controls: true,
@@ -145,6 +145,8 @@ Reveal.initialize({
             // // specified using percentage units.
             // width: 960, //100%
             // height: 700, //100%
+            width: "100%" ,
+            height: "100%"
 
             // // Factor of the display size that should remain empty around the content
             // margin: 0.1,
@@ -153,26 +155,21 @@ Reveal.initialize({
             // minScale: 0.2,
             // maxScale: 1.5
     
-//     });
+    });
 
 Reveal.addEventListener('fragmentshown', function( event ) {
     var f = event.fragment; // the fragment DOM element
-
-    // base animate.css class
-    f.classList.add('animated');
-
-    // pull animation class
+    // animation class
     var ac = f.getAttribute('data-animate');
+
+    f.classList.add('animated');
     f.classList.add(ac);
 });
 
 Reveal.addEventListener('fragmenthidden', function( event ) {
     var f = event.fragment; // the fragment DOM element
-    
-    // base animate.css class
-    f.classList.remove('animated');
-
-    // pull animation class
+    // animation class
     var ac = f.getAttribute('data-animate');
     f.classList.remove(ac);
+    f.classList.remove('animated');
 });
