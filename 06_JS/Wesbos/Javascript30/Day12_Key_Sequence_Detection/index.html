@@ -13,7 +13,6 @@
     // console.log(e.key);
     keypressed.push(e.key.toLowerCase());
     let matching = keypressed.slice(-secret.length);
-    console.log(matching.join(''));
     if (matching.join('') === secret){
       console.log("TADA");
     }
