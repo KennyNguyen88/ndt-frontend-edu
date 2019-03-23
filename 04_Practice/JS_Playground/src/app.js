@@ -1,18 +1,34 @@
-// import "./scss/styles.scss";
-// import "bootstrap";
-
+const cats = ['Bob', 'Willy', 'Mini'];
+const printArray = (items)  => {
+    items.map((item,index) => console.log(index, item));
+}
 //pop: Remove an item from the end of an array
 //Returns the removed item.
-let cats = ['Bob', 'Willy', 'Mini'];
-console.log("Original", cats);
-let popItem= cats.pop();
-console.log("popItem", popItem);
-console.log("pop", cats);
+const demo_pop = (arr) => {   
+    let cats_pop = arr.slice();
+    console.log('Original');
+    printArray(cats_pop);    
+    let popItem= cats_pop.pop();    
+    console.log("popItem", popItem);    
+    console.log("After pop");
+    printArray(cats_pop);    
+}
+demo_pop(cats);
 
 //push: Add items to the end of an array
 //Returns the new array length
-let lengthAfterPush = cats.push("push");
-console.log("push", cats);
+const demo_push = (arr) => {
+    let cats_push = arr.slice();
+    console.log('Original');
+    printArray(cats_push);    
+    let lengthAfterPush = cats_push.push("pushItem");
+    console.log('lengthAfterpush', lengthAfterPush);
+    console.log("After push");
+    printArray(cats_push);
+}
+demo_push(cats);
+/*
+
 
 //shift: Remove an item from the beginning of an array
 //Returns the removed item
@@ -90,3 +106,4 @@ let total = queues.reduce((accumulator, currentValue, currentIndex, array) => {
 });
 
 console.log("reduce", total);
+*/
